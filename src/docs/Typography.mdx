@@ -1,0 +1,18 @@
+import { Meta, Unstyled } from '@storybook/addon-docs/blocks';
+import { TypeScale } from '../foundations/Foundations';
+
+<Meta title="Foundations/Typography" />
+
+# Typography
+
+Typography defines the voice and tone of the interface and helps establish a clear visual hierarchy. Inter, 3 weights, 13 text styles. Source: `src/tokens/typography.json`.
+
+Use the class on any element: `<h2 className="text-heading-h1">`.
+
+<Unstyled><TypeScale /></Unstyled>
+
+## Notes from Figma
+- **H1 line height:** the doc frame says 16, the variable says 20. I used 20.
+- **Caption weight:** the doc frame says Medium, the variable says Regular. I used Regular.
+- **Weak hierarchy:** H2 (14 Medium) and Body (14 Regular) differ only in weight.
+- **Letter spacing:** Figma's -4 and -2 are read as -4% and -2%.

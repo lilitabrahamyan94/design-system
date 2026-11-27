@@ -1,0 +1,44 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+
+<Meta title="Foundations/Accessibility" />
+
+# Accessibility
+
+Every story is scanned with **axe** (WCAG 2.2 AA). Open any story and look at the **Accessibility** tab at the bottom. The components themselves pass: real form elements, labels, keyboard support and ARIA roles. The failures below come from **colours in the Figma kit**. They are kept exactly as designed here, so design can decide.
+
+## Colour contrast failures
+
+Text needs **4.5:1** (WCAG 1.4.3). Most text in this kit is 11–12px, so the large-text exception never applies.
+
+| Where | Text on background | Ratio | Fix idea |
+|---|---|---|---|
+| Placeholder, prefix/suffix, file date, symbol counter, weekday names | Gray-40 `#999999` on white | **2.8:1** | Gray-56 `#707070` (4.9:1) |
+| Same text in a Read-only field | `#999999` on Gray-08 `#EBEBEB` | **2.4:1** | Gray-56 |
+| Warning message | Sun Orange 080 `#F2A455` on white | **2.0:1** | a darker orange, ~`#B25E00` |
+| Success message | Leaf Green 080 `#48A348` on white | **3.2:1** | Leaf Green 100 `#008200` (5.0:1) |
+| Multi-select label chip | `#006ECE` on Twilight Blue 020 `#BFDBF3` | **3.6:1** | Twilight Blue 100 `#0058A5` text |
+| Secondary button, hover / click | `#707070` on `#EFEFEF` / `#DEDEDE` | **4.3 / 3.7:1** | darken the label to Gray-72 |
+| File error name | Red Blaze 080 `#E81A1A` on error tint | **4.0:1** | Red Blaze 100 text |
+| Selected date | `#EBEBEB` on `#006ECE` | **4.4:1** | white text |
+
+## Non-text contrast
+
+Focus indicators and control borders need **3:1** (WCAG 1.4.11 / 2.4.11).
+
+| Where | Ratio |
+|---|---|
+| Primary button focus ring, `#006ECE` at 16% | ~1.2:1 |
+| Secondary / Tertiary focus ring, `#006ECE` at 32% | ~1.6:1 |
+| Field and checkbox border, Gray-24 `#C2C2C2` | 1.8:1 |
+
+Disabled controls are exempt from contrast rules, so the disabled greys are fine.
+
+## Keyboard
+
+| Component | Keys |
+|---|---|
+| Select | ↓/↑ open and move · Enter/Space pick · Esc close · Backspace removes the last label |
+| Tabs | ←/→ · Home · End |
+| Radio group | ←/→ or ↑/↓ (native) |
+| Toggle, Checkbox | Space (native) |
+| Date Picker | Tab between days, Enter to pick |

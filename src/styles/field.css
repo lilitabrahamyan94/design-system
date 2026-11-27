@@ -1,0 +1,131 @@
+/* Field — Input, Select and Text Area, from the Figma "Field" component.
+   Needs colors.css + typography.css. Component tokens map 1:1 to Figma "Field/…", "Dropdown Field/…" and "Label/…" variables. */
+:root {
+  --field-bg: var(--color-base-white);                          /* Field/Background */
+  --field-bg-readonly: var(--color-gray-08);                    /* Field/Background Disabled — used by Read-only in Figma */
+  --field-stroke: var(--color-gray-24);                         /* Field/Stroke #C2C2C2 */
+  --field-stroke-hover: var(--color-gray-32);                   /* Field/Stroke Hover #ADADAD */
+  --field-stroke-focus: var(--color-twilight-blue-080);         /* Field/Stroke Focused #006ECE */
+  --field-stroke-error: var(--color-red-blaze-080);             /* Field/Stroke Error #E81A1A */
+  --field-stroke-disabled: var(--color-gray-16);                /* Field/Stroke Disabled #D6D6D6 */
+  --field-label: var(--color-gray-96);                          /* Field/Label Default */
+  --field-label-disabled: var(--color-gray-32);                 /* Field/Label Disabled */
+  --field-value: var(--color-gray-96);                          /* Field/Value */
+  --field-value-readonly: var(--color-gray-56);                 /* Field/Read-Only Value */
+  --field-muted: var(--color-gray-40);                          /* Field/Default Prefix Suffix Placeholder #999 */
+  --field-disabled-text: var(--color-gray-24);                  /* Field/Disabled Prefix Suffix Placeholder Value */
+  --field-icon: var(--color-gray-32);                           /* Field/Icons #ADADAD */
+  --field-icon-disabled: var(--color-gray-16);                  /* Field/Icons Disabled */
+  --field-counter: var(--color-gray-40);                        /* Field/Symbol Counter */
+  --field-counter-disabled: var(--color-gray-24);               /* Field/Disabled Symbol Counter */
+  --field-msg-info: var(--color-twilight-blue-080);             /* Field/Messages/Message Info */
+  --field-msg-success: var(--color-leaf-green-080);             /* Field/Messages/Message Success */
+  --field-msg-error: var(--color-red-blaze-080);                /* Field/Messages/Message Error */
+  --field-msg-warning: var(--color-sun-orange-080);             /* Field/Messages/Message Warning */
+  --field-radius: 8px;
+  /* Dropdown */
+  --dropdown-bg: var(--color-base-white);                       /* Surface/Paper */
+  --dropdown-stroke: var(--color-gray-16);                      /* Dropdown Field/Stroke */
+  --dropdown-divider: var(--color-gray-08);                     /* Dropdown Field/Divider */
+  --dropdown-item: var(--color-gray-56);                        /* Dropdown Field/Item Label Default */
+  --dropdown-item-selected: var(--color-twilight-blue-080);     /* Dropdown Field/Item Label Selected */
+  --dropdown-item-selected-bg: var(--color-gray-80-alpha-08);
+  --dropdown-shadow: 0 4px 24px rgba(0, 0, 0, .08);             /* Shadow for Dropdowns */
+  /* Chip ("Label" in Figma) */
+  --chip-bg: var(--color-twilight-blue-020);                    /* Label/Default Background #BFDBF3 */
+  --chip-stroke: var(--color-twilight-blue-040);
+  --chip-label: var(--color-twilight-blue-080);                 /* Label/Default Label */
+  --chip-readonly-bg: var(--color-gray-16);                     /* Label/Read-Only Background */
+  --chip-readonly-stroke: var(--color-gray-32);
+  --chip-readonly-label: var(--color-gray-48);                  /* Label/Read-Only Label #858585 */
+}
+
+.field { display: flex; flex-direction: column; width: 100%; min-width: 0; font-family: var(--font-family-sans); position: relative; }
+
+/* label row */
+.field__head { display: flex; align-items: center; gap: 0; min-height: 16px; }
+.field__label { flex: 1; min-width: 0; font-size: 11px; line-height: 16px; font-weight: var(--font-weight-medium); color: var(--field-label); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.field__req { color: var(--field-msg-error); font-weight: var(--font-weight-medium); }
+.field__hint { flex: none; width: 16px; height: 16px; color: var(--field-icon); display: inline-flex; padding: 0; border: 0; background: none; cursor: help; }
+.field__hint svg, .field__icon svg, .field__btn svg, .field__msg svg { display: block; }
+
+/* control box */
+.field__control {
+  display: flex; align-items: flex-start; min-height: 32px; box-sizing: border-box;
+  background: var(--field-bg); border: 1px solid var(--field-stroke); border-radius: var(--field-radius);
+  color: var(--field-value); font-size: 12px; line-height: 16px; cursor: text;
+}
+.field__control:hover, .field.is-hover .field__control { border-color: var(--field-stroke-hover); }
+.field__control:focus-within, .field.is-focus .field__control, .field.is-open .field__control { border-color: var(--field-stroke-focus); }
+.field.is-error .field__control { border-color: var(--field-stroke-error); }
+
+.field__icon { flex: none; width: 32px; height: 30px; display: flex; align-items: center; justify-content: center; color: var(--field-icon); margin-right: -12px; }
+.field__body { flex: 1; min-width: 0; display: flex; gap: 4px; align-items: flex-start; padding: 7px 12px; }
+.field__affix { flex: none; color: var(--field-muted); white-space: nowrap; }
+.field__input {
+  flex: 1; min-width: 0; margin: 0; padding: 0; border: 0; outline: 0; background: transparent;
+  font: inherit; color: inherit; line-height: 16px; height: 16px;
+}
+.field__input::placeholder { color: var(--field-muted); opacity: 1; }
+textarea.field__input { height: auto; min-height: 48px; resize: vertical; }
+.field--textarea .field__control { min-height: 64px; }
+.field__suffix { padding: 7px 12px 7px 0; }
+
+/* assistive row */
+.field__foot { display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; min-height: 16px; font-size: 11px; line-height: 16px; }
+.field__msg { display: inline-flex; gap: 4px; align-items: flex-start; color: var(--field-msg-info); }
+.field__msg--success { color: var(--field-msg-success); }
+.field__msg--error { color: var(--field-msg-error); }
+.field__msg--warning { color: var(--field-msg-warning); }
+.field__count { color: var(--field-counter); white-space: nowrap; margin-left: auto; }
+
+/* read-only */
+.field.is-readonly .field__control { background: var(--field-bg-readonly); border-color: var(--field-stroke); cursor: default; }
+.field.is-readonly .field__input, .field.is-readonly .field__value { color: var(--field-value-readonly); }
+
+/* disabled */
+.field.is-disabled .field__control { border-color: var(--field-stroke-disabled); cursor: not-allowed; }
+.field.is-disabled .field__label { color: var(--field-label-disabled); }
+.field.is-disabled .field__req, .field.is-disabled .field__control, .field.is-disabled .field__affix,
+.field.is-disabled .field__input, .field.is-disabled .field__input::placeholder, .field.is-disabled .field__value { color: var(--field-disabled-text); }
+.field.is-disabled .field__icon, .field.is-disabled .field__btn { color: var(--field-icon-disabled); }
+.field.is-disabled .field__count { color: var(--field-counter-disabled); }
+
+/* ---------- Select ---------- */
+.field--select .field__control { cursor: pointer; align-items: stretch; }
+.field__trigger { all: unset; box-sizing: border-box; flex: 1; min-width: 0; display: flex; align-items: flex-start; cursor: inherit; border-radius: var(--field-radius); }
+.field__trigger:focus-visible { outline: none; }
+.field__value { flex: 1; min-width: 0; padding: 7px 12px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.field__value.is-placeholder { color: var(--field-muted); }
+.field__btn { all: unset; box-sizing: border-box; flex: none; width: 32px; height: 30px; display: flex; align-items: center; justify-content: center; color: var(--field-muted); cursor: pointer; }
+.field__btn--clear { color: var(--field-icon-disabled); margin-right: -12px; }
+.field__btn--clear:hover { color: var(--field-icon); }
+.field__btn:focus-visible { outline: 2px solid var(--field-stroke-focus); outline-offset: -4px; border-radius: 6px; }
+.field.is-disabled .field__btn, .field.is-readonly .field__btn { cursor: inherit; }
+
+.ftags { flex: 1; min-width: 0; display: flex; flex-wrap: wrap; gap: 4px; padding: 3px 4px; }
+.field--select .field__icon { margin-right: -4px; width: 28px; }
+.field--select .field__icon + .field__trigger .field__value { padding-left: 4px; }
+.ftag { display: inline-flex; align-items: center; gap: 4px; padding: 3px 8px; border-radius: 6px; box-sizing: border-box;
+  background: var(--chip-bg); border: 1px solid var(--chip-stroke); color: var(--chip-label);
+  font-size: 12px; line-height: 16px; font-weight: var(--font-weight-medium); white-space: nowrap; }
+.ftag__x { all: unset; display: inline-flex; width: 12px; height: 16px; overflow: visible; cursor: pointer; color: inherit; border-radius: 3px; }
+.ftag__x svg { margin-left: -2px; }
+.ftag__x:focus-visible { outline: 2px solid currentColor; }
+.field.is-readonly .ftag, .field.is-disabled .ftag { background: var(--chip-readonly-bg); border-color: var(--chip-readonly-stroke); color: var(--chip-readonly-label); }
+.field.is-readonly .ftag__x, .field.is-disabled .ftag__x { display: none; }
+
+.field__box { position: relative; }
+.dropdown {
+  position: absolute; left: 0; right: 0; top: 100%; z-index: 20; margin-top: 4px;
+  max-height: 260px; overflow-y: auto; box-sizing: border-box;
+  background: var(--dropdown-bg); border: 1px solid var(--dropdown-stroke); border-radius: var(--field-radius);
+  box-shadow: var(--dropdown-shadow); padding: 0; list-style: none;
+}
+.dropdown[hidden] { display: none; }
+.dropdown__item { padding: 12px; border-bottom: 1px solid var(--dropdown-divider); font-size: 12px; line-height: 16px;
+  font-weight: var(--font-weight-medium); color: var(--dropdown-item); cursor: pointer; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.dropdown__item:last-child { border-bottom: 0; }
+.dropdown__item:hover, .dropdown__item.is-active { background: var(--color-gray-80-alpha-04); }
+.dropdown__item[aria-selected="true"] { background: var(--dropdown-item-selected-bg); color: var(--dropdown-item-selected); font-weight: 700; }
+.dropdown--static { position: static; margin-top: 4px; }

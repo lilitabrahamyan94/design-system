@@ -1,0 +1,578 @@
+{
+  "$description": "Genesis Design Kit \u2014 colour tokens. Source: Figma file rERrl5l5If8XdYichRkEK1, node 3410:42708",
+  "color": {
+    "base": {
+      "white": {
+        "$value": "#ffffff",
+        "$type": "color",
+        "$extensions": {
+          "figma": "White"
+        }
+      },
+      "black": {
+        "$value": "#000000",
+        "$type": "color",
+        "$extensions": {
+          "figma": "Black"
+        }
+      }
+    },
+    "gray": {
+      "02": {
+        "$value": "#fafafa",
+        "$type": "color",
+        "$extensions": {
+          "figma": "Gray-02"
+        }
+      },
+      "04": {
+        "$value": "#f5f5f5",
+        "$type": "color",
+        "$extensions": {
+          "figma": "Gray-04"
+        }
+      },
+      "08": {
+        "$value": "#ebebeb",
+        "$type": "color",
+        "$extensions": {
+          "figma": "Gray-08"
+        }
+      },
+      "16": {
+        "$value": "#d6d6d6",
+        "$type": "color",
+        "$extensions": {
+          "figma": "Gray-16"
+        }
+      },
+      "24": {
+        "$value": "#c2c2c2",
+        "$type": "color",
+        "$extensions": {
+          "figma": "Gray-24"
+        }
+      },
+      "32": {
+        "$value": "#adadad",
+        "$type": "color",
+        "$extensions": {
+          "figma": "Gray-32"
+        }
+      },
+      "40": {
+        "$value": "#999999",
+        "$type": "color",
+        "$extensions": {
+          "figma": "Gray-40"
+        }
+      },
+      "48": {
+        "$value": "#858585",
+        "$type": "color",
+        "$extensions": {
+          "figma": "Gray-48"
+        }
+      },
+      "56": {
+        "$value": "#707070",
+        "$type": "color",
+        "$extensions": {
+          "figma": "Gray-56"
+        }
+      },
+      "64": {
+        "$value": "#5c5c5c",
+        "$type": "color",
+        "$extensions": {
+          "figma": "Gray-64"
+        }
+      },
+      "72": {
+        "$value": "#474747",
+        "$type": "color",
+        "$extensions": {
+          "figma": "Gray-72"
+        }
+      },
+      "80": {
+        "$value": "#333333",
+        "$type": "color",
+        "$extensions": {
+          "figma": "Gray-80"
+        }
+      },
+      "88": {
+        "$value": "#1f1f1f",
+        "$type": "color",
+        "$extensions": {
+          "figma": "Gray-88"
+        }
+      },
+      "96": {
+        "$value": "#141414",
+        "$type": "color",
+        "$extensions": {
+          "figma": "Gray-96"
+        }
+      }
+    },
+    "gray-80-alpha": {
+      "04": {
+        "$value": "#3333330a",
+        "$type": "color",
+        "$extensions": {
+          "figma": "Gray-80 alpha 04"
+        }
+      },
+      "08": {
+        "$value": "#33333314",
+        "$type": "color",
+        "$extensions": {
+          "figma": "Gray-80 alpha 08"
+        }
+      },
+      "16": {
+        "$value": "#33333329",
+        "$type": "color",
+        "$extensions": {
+          "figma": "Gray-80 alpha 16"
+        }
+      },
+      "32": {
+        "$value": "#33333352",
+        "$type": "color",
+        "$extensions": {
+          "figma": "Gray-80 alpha 32"
+        }
+      },
+      "48": {
+        "$value": "#3333337a",
+        "$type": "color",
+        "$extensions": {
+          "figma": "Gray-80 alpha 48"
+        }
+      }
+    },
+    "sun-orange": {
+      "020": {
+        "$value": "#fce8d4",
+        "$type": "color",
+        "$extensions": {
+          "figma": "Sun Orange 020"
+        }
+      },
+      "040": {
+        "$value": "#f9d2aa",
+        "$type": "color",
+        "$extensions": {
+          "figma": "Sun Orange 040"
+        }
+      },
+      "080": {
+        "$value": "#f2a455",
+        "$type": "color",
+        "$extensions": {
+          "figma": "Sun Orange 080"
+        }
+      },
+      "100": {
+        "$value": "#f08c29",
+        "$type": "color",
+        "$extensions": {
+          "figma": "Sun Orange 100"
+        }
+      }
+    },
+    "sand-yellow": {
+      "020": {
+        "$value": "#fcf5d4",
+        "$type": "color",
+        "$extensions": {
+          "figma": "Sand Yellow 020"
+        }
+      },
+      "040": {
+        "$value": "#faeaa9",
+        "$type": "color",
+        "$extensions": {
+          "figma": "Sand Yellow 040"
+        }
+      },
+      "060": {
+        "$value": "#f5e17f",
+        "$type": "color",
+        "$extensions": {
+          "figma": "Sand Yellow 060"
+        }
+      },
+      "080": {
+        "$value": "#f3d753",
+        "$type": "color",
+        "$extensions": {
+          "figma": "Sand Yellow 080"
+        }
+      },
+      "100": {
+        "$value": "#f0cd28",
+        "$type": "color",
+        "$extensions": {
+          "figma": "Sand Yellow 100"
+        }
+      }
+    },
+    "leaf-green": {
+      "020": {
+        "$value": "#d5e8d5",
+        "$type": "color",
+        "$extensions": {
+          "figma": "Leaf Green 020"
+        }
+      },
+      "040": {
+        "$value": "#a2d0a2",
+        "$type": "color",
+        "$extensions": {
+          "figma": "Leaf Green 040"
+        }
+      },
+      "060": {
+        "$value": "#71b871",
+        "$type": "color",
+        "$extensions": {
+          "figma": "Leaf Green 060"
+        }
+      },
+      "080": {
+        "$value": "#48a348",
+        "$type": "color",
+        "$extensions": {
+          "figma": "Leaf Green 080"
+        }
+      },
+      "100": {
+        "$value": "#008200",
+        "$type": "color",
+        "$extensions": {
+          "figma": "Leaf Green 100"
+        }
+      }
+    },
+    "ocean-teal": {
+      "020": {
+        "$value": "#ccedec",
+        "$type": "color",
+        "$extensions": {
+          "figma": "Ocean Teal 020"
+        }
+      },
+      "040": {
+        "$value": "#99dbdb",
+        "$type": "color",
+        "$extensions": {
+          "figma": "Ocean Teal 040"
+        }
+      },
+      "060": {
+        "$value": "#67cac9",
+        "$type": "color",
+        "$extensions": {
+          "figma": "Ocean Teal 060"
+        }
+      },
+      "080": {
+        "$value": "#33b8b7",
+        "$type": "color",
+        "$extensions": {
+          "figma": "Ocean Teal 080"
+        }
+      },
+      "100": {
+        "$value": "#05a5a5",
+        "$type": "color",
+        "$extensions": {
+          "figma": "Ocean Teal 100"
+        }
+      }
+    },
+    "sky-blue": {
+      "020": {
+        "$value": "#ddf3fc",
+        "$type": "color",
+        "$extensions": {
+          "figma": "Sky Blue 020"
+        }
+      },
+      "040": {
+        "$value": "#bbe7f9",
+        "$type": "color",
+        "$extensions": {
+          "figma": "Sky Blue 040"
+        }
+      },
+      "060": {
+        "$value": "#99dbf6",
+        "$type": "color",
+        "$extensions": {
+          "figma": "Sky Blue 060"
+        }
+      },
+      "080": {
+        "$value": "#77cff3",
+        "$type": "color",
+        "$extensions": {
+          "figma": "Sky Blue 080"
+        }
+      },
+      "100": {
+        "$value": "#55c3ef",
+        "$type": "color",
+        "$extensions": {
+          "figma": "Sky Blue 100"
+        }
+      }
+    },
+    "twilight-blue": {
+      "020": {
+        "$value": "#bfdbf3",
+        "$type": "color",
+        "$extensions": {
+          "figma": "Twilight Blue 020"
+        }
+      },
+      "040": {
+        "$value": "#80b6e7",
+        "$type": "color",
+        "$extensions": {
+          "figma": "Twilight Blue 040"
+        }
+      },
+      "060": {
+        "$value": "#4092da",
+        "$type": "color",
+        "$extensions": {
+          "figma": "Twilight Blue 060"
+        }
+      },
+      "080": {
+        "$value": "#006ece",
+        "$type": "color",
+        "$extensions": {
+          "figma": "Twilight Blue 080"
+        }
+      },
+      "100": {
+        "$value": "#0058a5",
+        "$type": "color",
+        "$extensions": {
+          "figma": "Twilight Blue 100"
+        }
+      }
+    },
+    "floral-purple": {
+      "020": {
+        "$value": "#ded4e6",
+        "$type": "color",
+        "$extensions": {
+          "figma": "Floral Purple 020"
+        }
+      },
+      "040": {
+        "$value": "#bda9cd",
+        "$type": "color",
+        "$extensions": {
+          "figma": "Floral Purple 040"
+        }
+      },
+      "060": {
+        "$value": "#9c7eb4",
+        "$type": "color",
+        "$extensions": {
+          "figma": "Floral Purple 060"
+        }
+      },
+      "080": {
+        "$value": "#7b539b",
+        "$type": "color",
+        "$extensions": {
+          "figma": "Floral Purple 080"
+        }
+      },
+      "100": {
+        "$value": "#5a2882",
+        "$type": "color",
+        "$extensions": {
+          "figma": "Floral Purple 100"
+        }
+      }
+    },
+    "brand-fuchsia": {
+      "020": {
+        "$value": "#fae1ef",
+        "$type": "color",
+        "$extensions": {
+          "figma": "Brand Fuchsia 020"
+        }
+      },
+      "040": {
+        "$value": "#fcafd8",
+        "$type": "color",
+        "$extensions": {
+          "figma": "Brand Fuchsia 040"
+        }
+      },
+      "060": {
+        "$value": "#ff80c5",
+        "$type": "color",
+        "$extensions": {
+          "figma": "Brand Fuchsia 060"
+        }
+      },
+      "080": {
+        "$value": "#ff4dad",
+        "$type": "color",
+        "$extensions": {
+          "figma": "Brand Fuchsia 080"
+        }
+      },
+      "100": {
+        "$value": "#ff008a",
+        "$type": "color",
+        "$extensions": {
+          "figma": "Brand Fuchsia 100"
+        }
+      }
+    },
+    "red-blaze": {
+      "020": {
+        "$value": "#fad4d4",
+        "$type": "color",
+        "$extensions": {
+          "figma": "Red Blaze 020"
+        }
+      },
+      "040": {
+        "$value": "#f5aaaa",
+        "$type": "color",
+        "$extensions": {
+          "figma": "Red Blaze 040"
+        }
+      },
+      "060": {
+        "$value": "#eb5555",
+        "$type": "color",
+        "$extensions": {
+          "figma": "Red Blaze 060"
+        }
+      },
+      "080": {
+        "$value": "#e81a1a",
+        "$type": "color",
+        "$extensions": {
+          "figma": "Red Blaze 080"
+        }
+      },
+      "100": {
+        "$value": "#671c1f",
+        "$type": "color",
+        "$extensions": {
+          "figma": "Red Blaze 100"
+        },
+        "$description": "Check: breaks the scale (darker than 080, hue shifts to maroon)"
+      }
+    },
+    "brand-fuchsia-100-alpha": {
+      "04": {
+        "$value": "#ff008a0a",
+        "$type": "color",
+        "$extensions": {
+          "figma": "Brand Fuchsia 100 alpha 04"
+        }
+      },
+      "08": {
+        "$value": "#ff008a14",
+        "$type": "color",
+        "$extensions": {
+          "figma": "Brand Fuchsia 100 alpha 08"
+        }
+      },
+      "16": {
+        "$value": "#ff008a29",
+        "$type": "color",
+        "$extensions": {
+          "figma": "Brand Fuchsia 100 alpha 16"
+        }
+      },
+      "32": {
+        "$value": "#ff008a52",
+        "$type": "color",
+        "$extensions": {
+          "figma": "Brand Fuchsia 100 alpha 32"
+        }
+      },
+      "48": {
+        "$value": "#ff008a7a",
+        "$type": "color",
+        "$extensions": {
+          "figma": "Brand Fuchsia 100 alpha 48"
+        }
+      }
+    }
+  },
+  "semantic": {
+    "text": {
+      "on-light": {
+        "primary": {
+          "$value": "{color.gray.96}",
+          "$type": "color",
+          "$extensions": {
+            "figma": "Text/Light Surface/Primary"
+          }
+        },
+        "secondary": {
+          "$value": "{color.gray.56}",
+          "$type": "color",
+          "$extensions": {
+            "figma": "Text/Light Surface/Secondary"
+          }
+        }
+      }
+    },
+    "surface": {
+      "papyrus": {
+        "$value": "{color.gray.02}",
+        "$type": "color",
+        "$extensions": {
+          "figma": "Surface/Papyrus"
+        }
+      },
+      "clay": {
+        "$value": "{color.gray.04}",
+        "$type": "color",
+        "$extensions": {
+          "figma": "Surface/Clay"
+        }
+      }
+    },
+    "brand": {
+      "primary": {
+        "$value": "{color.brand-fuchsia.100}",
+        "$type": "color",
+        "$extensions": {
+          "figma": "Brand Fuchsia 100"
+        },
+        "$description": "Proposed \u2014 not a Figma variable yet"
+      }
+    },
+    "feedback": {
+      "error": {
+        "$value": "{color.red-blaze.080}",
+        "$type": "color",
+        "$extensions": {
+          "figma": "Red Blaze / Error"
+        },
+        "$description": "Proposed shade \u2014 frame only labels the family 'Red Blaze / Error'"
+      }
+    }
+  }
+}

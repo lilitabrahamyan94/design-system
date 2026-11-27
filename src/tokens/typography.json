@@ -1,0 +1,277 @@
+{
+  "$description": "Genesis Design Kit \u2014 typography tokens. Source: Figma rERrl5l5If8XdYichRkEK1, node 3410:43120",
+  "font": {
+    "family": {
+      "sans": {
+        "$value": [
+          "Inter",
+          "system-ui",
+          "-apple-system",
+          "Segoe UI",
+          "Roboto",
+          "sans-serif"
+        ],
+        "$type": "fontFamily"
+      }
+    },
+    "weight": {
+      "regular": {
+        "$value": 400,
+        "$type": "fontWeight"
+      },
+      "medium": {
+        "$value": 500,
+        "$type": "fontWeight"
+      },
+      "semibold": {
+        "$value": 600,
+        "$type": "fontWeight"
+      }
+    },
+    "size": {
+      "11": {
+        "$value": "11px",
+        "$type": "dimension"
+      },
+      "12": {
+        "$value": "12px",
+        "$type": "dimension"
+      },
+      "14": {
+        "$value": "14px",
+        "$type": "dimension"
+      },
+      "16": {
+        "$value": "16px",
+        "$type": "dimension"
+      },
+      "24": {
+        "$value": "24px",
+        "$type": "dimension"
+      },
+      "32": {
+        "$value": "32px",
+        "$type": "dimension"
+      }
+    },
+    "line-height": {
+      "16": {
+        "$value": "16px",
+        "$type": "dimension"
+      },
+      "20": {
+        "$value": "20px",
+        "$type": "dimension"
+      },
+      "32": {
+        "$value": "32px",
+        "$type": "dimension"
+      },
+      "40": {
+        "$value": "40px",
+        "$type": "dimension"
+      }
+    },
+    "letter-spacing": {
+      "tight": {
+        "$value": "-0.04em",
+        "$type": "dimension",
+        "$description": "Figma -4%"
+      },
+      "snug": {
+        "$value": "-0.02em",
+        "$type": "dimension",
+        "$description": "Figma -2%"
+      },
+      "normal": {
+        "$value": "0em",
+        "$type": "dimension"
+      }
+    }
+  },
+  "text": {
+    "display": {
+      "large": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{font.family.sans}",
+          "fontWeight": "{font.weight.medium}",
+          "fontSize": "{font.size.32}",
+          "lineHeight": "{font.line-height.40}",
+          "letterSpacing": "{font.letter-spacing.tight}"
+        },
+        "$extensions": {
+          "figma": "Display/Large"
+        }
+      },
+      "medium": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{font.family.sans}",
+          "fontWeight": "{font.weight.medium}",
+          "fontSize": "{font.size.24}",
+          "lineHeight": "{font.line-height.32}",
+          "letterSpacing": "{font.letter-spacing.snug}"
+        },
+        "$extensions": {
+          "figma": "Display/Medium"
+        }
+      }
+    },
+    "heading": {
+      "h1": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{font.family.sans}",
+          "fontWeight": "{font.weight.medium}",
+          "fontSize": "{font.size.16}",
+          "lineHeight": "{font.line-height.20}",
+          "letterSpacing": "{font.letter-spacing.normal}"
+        },
+        "$extensions": {
+          "figma": "Heading/H1"
+        },
+        "$description": "Doc frame says line-height 16, variable says 20 \u2014 using 20"
+      },
+      "h2": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{font.family.sans}",
+          "fontWeight": "{font.weight.medium}",
+          "fontSize": "{font.size.14}",
+          "lineHeight": "{font.line-height.16}",
+          "letterSpacing": "{font.letter-spacing.normal}"
+        },
+        "$extensions": {
+          "figma": "Heading/H2"
+        }
+      },
+      "h3": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{font.family.sans}",
+          "fontWeight": "{font.weight.medium}",
+          "fontSize": "{font.size.12}",
+          "lineHeight": "{font.line-height.16}",
+          "letterSpacing": "{font.letter-spacing.normal}"
+        },
+        "$extensions": {
+          "figma": "Heading/H3"
+        }
+      }
+    },
+    "body": {
+      "default": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{font.family.sans}",
+          "fontWeight": "{font.weight.regular}",
+          "fontSize": "{font.size.14}",
+          "lineHeight": "{font.line-height.20}",
+          "letterSpacing": "{font.letter-spacing.normal}"
+        },
+        "$extensions": {
+          "figma": "Body/Default"
+        }
+      },
+      "highlighted": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{font.family.sans}",
+          "fontWeight": "{font.weight.semibold}",
+          "fontSize": "{font.size.14}",
+          "lineHeight": "{font.line-height.20}",
+          "letterSpacing": "{font.letter-spacing.normal}"
+        },
+        "$extensions": {
+          "figma": "Body/Highlighted"
+        }
+      }
+    },
+    "caption": {
+      "default": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{font.family.sans}",
+          "fontWeight": "{font.weight.regular}",
+          "fontSize": "{font.size.12}",
+          "lineHeight": "{font.line-height.16}",
+          "letterSpacing": "{font.letter-spacing.normal}"
+        },
+        "$extensions": {
+          "figma": "Caption/Default"
+        },
+        "$description": "Doc frame says Medium, variable says Regular \u2014 using Regular"
+      },
+      "highlighted": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{font.family.sans}",
+          "fontWeight": "{font.weight.semibold}",
+          "fontSize": "{font.size.12}",
+          "lineHeight": "{font.line-height.16}",
+          "letterSpacing": "{font.letter-spacing.normal}"
+        },
+        "$extensions": {
+          "figma": "Caption/Highlighted"
+        }
+      }
+    },
+    "button": {
+      "label": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{font.family.sans}",
+          "fontWeight": "{font.weight.semibold}",
+          "fontSize": "{font.size.12}",
+          "lineHeight": "{font.line-height.16}",
+          "letterSpacing": "{font.letter-spacing.normal}"
+        },
+        "$extensions": {
+          "figma": "Button/Label Highlighted"
+        }
+      }
+    },
+    "field": {
+      "placeholder": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{font.family.sans}",
+          "fontWeight": "{font.weight.regular}",
+          "fontSize": "{font.size.12}",
+          "lineHeight": "{font.line-height.16}",
+          "letterSpacing": "{font.letter-spacing.normal}"
+        },
+        "$extensions": {
+          "figma": "Field/Placeholder"
+        }
+      },
+      "label": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{font.family.sans}",
+          "fontWeight": "{font.weight.medium}",
+          "fontSize": "{font.size.11}",
+          "lineHeight": "{font.line-height.16}",
+          "letterSpacing": "{font.letter-spacing.normal}"
+        },
+        "$extensions": {
+          "figma": "Field/Label"
+        }
+      },
+      "assistive": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{font.family.sans}",
+          "fontWeight": "{font.weight.regular}",
+          "fontSize": "{font.size.11}",
+          "lineHeight": "{font.line-height.16}",
+          "letterSpacing": "{font.letter-spacing.normal}"
+        },
+        "$extensions": {
+          "figma": "Field/Assistive Message"
+        }
+      }
+    }
+  }
+}

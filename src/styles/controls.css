@@ -1,0 +1,186 @@
+/* Controls — Toggle, Tabs, Attach File, Radio Button, Checkbox, Date Picker.
+   From the Figma "Controls" page. Needs colors.css + typography.css (+ button.css for the file "Replace" button).
+   Every class starts with ds- so it can't clash with page styles. */
+:root {
+  /* Toggle */
+  --toggle-off: var(--color-gray-80-alpha-16);            /* Toggle/Default Background */
+  --toggle-off-hover: var(--color-gray-80-alpha-32);      /* Toggle/Hover Background */
+  --toggle-off-disabled: var(--color-gray-80-alpha-48);   /* Toggle/Disabled Background */
+  --toggle-knob: var(--color-base-white);                 /* Toggle/Default Knot */
+  --toggle-knob-disabled: var(--color-gray-80-alpha-48);  /* Toggle/Disabled Knot */
+  --toggle-on: #82bf00;                                   /* hard-coded in Figma — not a token */
+  --toggle-on-hover: #6b9c00;                             /* hard-coded in Figma — not a token */
+  --toggle-on-disabled: #ababab;                          /* hard-coded in Figma — not a token */
+  /* Tabs */
+  --tabs-bg: var(--color-gray-04);                        /* Surface/Clay */
+  --tabs-stroke: var(--color-gray-80-alpha-08);
+  --tab-label: var(--color-gray-56);                      /* Text/Light Surface/Secondary */
+  --tab-hover-bg: var(--color-gray-08);                   /* Surface/Marble */
+  --tab-selected-bg: var(--color-base-white);             /* Surface/Paper */
+  --tab-selected-stroke: var(--color-gray-08);
+  --tab-selected-label: var(--color-twilight-blue-080);
+  --tab-disabled-label: var(--color-gray-32);             /* Text/Light Surface/Disabled */
+  --tab-focus: var(--color-twilight-blue-100);            /* "Twilight Blue 100" #0058A5 */
+  --tab-focus-bg: #006ece0a;                              /* "Twilight Blue 100 alpha 04" — actually 080 at 4% */
+  --tab-arrow: var(--color-gray-40);
+  --tab-arrow-disabled: var(--color-gray-16);
+  /* Attach file */
+  --upload-bg: var(--color-gray-80-alpha-04);             /* Attach/Uploader/Bacground */
+  --upload-stroke: var(--color-gray-80-alpha-08);         /* Attach/Uploader/Stroke */
+  --upload-hover: var(--color-gray-80-alpha-04);          /* Attach/Uploader/Hover (stacks on the background) */
+  --upload-icon: var(--color-twilight-blue-080);
+  --upload-title: var(--color-gray-96);                   /* Figma uses pure #000 here */
+  --upload-hint: var(--color-gray-48);                    /* Figma uses #8A8A8A here */
+  --file-stroke: var(--color-gray-80-alpha-16);           /* Attach/Uploaded File/FIle Stroke */
+  --file-hover: var(--color-gray-80-alpha-08);            /* Attach/Uploaded File/File Hover */
+  --file-name: var(--color-twilight-blue-080);
+  --file-meta: var(--color-gray-40);                      /* Text/Light Surface/Tertiary */
+  --file-success: var(--color-leaf-green-100);
+  --file-remove: var(--color-red-blaze-080);
+  --file-error-bg: #e81a1a14;                             /* Attach/Uploaded File/Error Background */
+  --file-error-stroke: #e81a1a29;                         /* Attach/Uploaded File/Error Stroke */
+  --file-error-hover: #e81a1a14;                          /* Attach/Uploaded File/Error Hover */
+  --file-error-text: var(--color-red-blaze-080);          /* Text/Light Surface/Error */
+  --file-progress: var(--color-twilight-blue-080);
+  /* Radio + Checkbox */
+  --choice-bg: var(--color-base-white);
+  --choice-stroke: var(--color-gray-24);                  /* RadioButton/Stroke, Checkbox/Stroke #C2C2C2 */
+  --choice-hover: var(--color-gray-80-alpha-16);          /* RadioButton/Background Hover, Checkbox/Background Hover */
+  --choice-mark: var(--color-twilight-blue-080);          /* RadioButton/Icon, Checkbox/Icon */
+  --choice-mark-disabled: var(--color-gray-48);           /* …/Icon Disabled #858585 */
+  --radio-disabled-bg: var(--color-gray-80-alpha-32);     /* RadioButton/Background Disabled */
+  --check-disabled-bg: var(--color-gray-80-alpha-08);     /* Checkbox/Background Disabled */
+  --choice-label: var(--color-gray-96);
+  --choice-label-disabled: var(--color-gray-40);
+  /* Date picker */
+  --date-bg: var(--color-base-white);
+  --date-stroke: var(--color-gray-16);                    /* Dropdown Field/Stroke */
+  --date-shadow: 0 4px 24px rgba(0, 0, 0, .08);           /* Shadow for Dropdowns */
+  --date-weekday: var(--color-gray-40);
+  --date-day: var(--color-gray-96);
+  --date-selected-bg: var(--color-twilight-blue-080);
+  --date-selected-ring: #006ece29;                        /* "Twilight Blue 100 alpha 16" */
+  --date-selected-label: var(--color-gray-08);            /* Text/Dark Surface/Primary #EBEBEB */
+  --date-range-bg: #006ece14;                             /* "Twilight Blue 100 alpha 08" */
+}
+
+.ds-toggle, .ds-radio, .ds-check, .ds-tabs, .ds-upload, .ds-file, .ds-date { font-family: var(--font-family-sans); font-size: 12px; line-height: 16px; box-sizing: border-box; }
+.ds-toggle *, .ds-tabs *, .ds-upload *, .ds-file *, .ds-date * { box-sizing: border-box; }
+
+/* ---------------- Toggle (switch) ---------------- */
+.ds-toggle { display: inline-flex; align-items: center; gap: 8px; cursor: pointer; color: var(--tab-label); user-select: none; }
+.ds-toggle input { position: absolute; opacity: 0; width: 1px; height: 1px; margin: 0; }
+.ds-toggle__track { position: relative; flex: none; width: 32px; height: 16px; border-radius: 30px; background: var(--toggle-off); transition: background-color .15s; }
+.ds-toggle__track::after { content: ""; position: absolute; top: 1px; left: 1px; width: 14px; height: 14px; border-radius: 50%; background: var(--toggle-knob); box-shadow: 0 4px 4px rgba(0,0,0,.08); transition: transform .15s; }
+.ds-toggle:hover .ds-toggle__track, .ds-toggle.is-hover .ds-toggle__track { background: var(--toggle-off-hover); }
+.ds-toggle:hover, .ds-toggle.is-hover { color: var(--choice-label); }
+.ds-toggle:has(input:checked) { color: var(--choice-label); font-weight: var(--font-weight-semibold); }
+.ds-toggle input:checked + .ds-toggle__track { background: var(--toggle-on); }
+.ds-toggle input:checked + .ds-toggle__track::after { transform: translateX(16px); box-shadow: 0 4px 4px rgba(0,0,0,.24); }
+.ds-toggle:hover input:checked + .ds-toggle__track, .ds-toggle.is-hover input:checked + .ds-toggle__track { background: var(--toggle-on-hover); }
+.ds-toggle:has(input:disabled) { cursor: not-allowed; color: var(--choice-label-disabled); }
+.ds-toggle input:disabled + .ds-toggle__track { background: var(--toggle-off-disabled); }
+.ds-toggle input:disabled + .ds-toggle__track::after { background: var(--toggle-knob-disabled); box-shadow: none; }
+.ds-toggle:has(input:checked:disabled) { color: var(--tab-label); }
+.ds-toggle input:checked:disabled + .ds-toggle__track { background: var(--toggle-on-disabled); }
+.ds-toggle input:checked:disabled + .ds-toggle__track::after { background: rgba(255,255,255,.32); }
+.ds-toggle input:focus-visible + .ds-toggle__track { outline: 2px solid var(--tab-focus); outline-offset: 2px; }
+
+/* ---------------- Tabs ---------------- */
+.ds-tabs { display: flex; align-items: stretch; background: var(--tabs-bg); border-bottom: 1px solid var(--tabs-stroke); position: relative; }
+.ds-tabs--solo { border: 1px solid var(--tabs-stroke); border-radius: 8px; overflow: hidden; }
+.ds-tabs__list { display: flex; flex: 1; min-width: 0; }
+.ds-tab {
+  all: unset; box-sizing: border-box; flex: 1 1 0; min-width: 0; height: 32px; padding: 8px 16px; cursor: pointer;
+  display: flex; align-items: center; justify-content: center; text-align: center;
+  font-weight: var(--font-weight-semibold); font-size: 12px; line-height: 16px; color: var(--tab-label);
+  overflow: hidden; text-overflow: ellipsis; white-space: nowrap; border: 2px solid transparent; border-radius: 8px;
+}
+.ds-tab > span { overflow: hidden; text-overflow: ellipsis; }
+.ds-tab:hover, .ds-tab.is-hover { background: var(--tab-hover-bg); border-radius: 0; border-color: var(--tab-hover-bg); }
+.ds-tab[aria-selected="true"] { background: var(--tab-selected-bg); border-color: var(--tab-selected-stroke); border-radius: 8px; color: var(--tab-selected-label); }
+.ds-tab:disabled, .ds-tab[aria-disabled="true"] { color: var(--tab-disabled-label); cursor: not-allowed; background: none; border-color: transparent; }
+.ds-tab:focus-visible, .ds-tab.is-focus { background: var(--tab-focus-bg); border-color: var(--tab-focus); border-radius: 8px; color: var(--choice-label); }
+/* 8+ tabs: fixed width, horizontal scroll with arrow buttons */
+.ds-tabs--scroll .ds-tabs__list { overflow-x: auto; scrollbar-width: none; scroll-behavior: smooth; }
+.ds-tabs--scroll .ds-tabs__list::-webkit-scrollbar { display: none; }
+.ds-tabs--scroll .ds-tab { flex: 0 0 140px; }
+.ds-tabs__arrow { all: unset; box-sizing: border-box; flex: none; width: 24px; height: 32px; padding: 8px 4px; display: flex; align-items: center; background: var(--tabs-bg); color: var(--tab-arrow); cursor: pointer; }
+.ds-tabs__arrow--next { border-left: 1px solid var(--tab-arrow-disabled); }
+.ds-tabs__arrow:disabled { color: var(--tab-arrow-disabled); cursor: default; }
+.ds-tabs__arrow:focus-visible { outline: 2px solid var(--tab-focus); outline-offset: -2px; }
+.ds-tabpanel { padding: 16px 4px 0; color: var(--tab-label); }
+
+/* ---------------- Attach file: uploader ---------------- */
+.ds-upload {
+  position: relative; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px;
+  width: 100%; min-height: 96px; padding: 16px; text-align: center; cursor: pointer;
+  background: var(--upload-bg); border: 1px dashed var(--upload-stroke); border-radius: 8px;
+}
+.ds-upload:hover, .ds-upload.is-hover, .ds-upload.is-drag { background-image: linear-gradient(var(--upload-hover), var(--upload-hover)); }
+.ds-upload.is-drag { border-color: var(--upload-icon); }
+.ds-upload:focus-within { outline: 2px solid var(--tab-focus); outline-offset: 2px; }
+.ds-upload input { position: absolute; inset: 0; opacity: 0; cursor: pointer; width: 100%; }
+.ds-upload__icon { color: var(--upload-icon); display: flex; }
+.ds-upload__title { color: var(--upload-title); font-weight: var(--font-weight-medium); }
+.ds-upload__hint { color: var(--upload-hint); }
+.ds-upload--s { flex-direction: row; justify-content: flex-start; gap: 16px; min-height: 48px; padding: 8px 16px; text-align: left; }
+
+/* ---------------- Attach file: file row ---------------- */
+.ds-files { display: grid; gap: 8px; }
+.ds-file { position: relative; display: flex; align-items: center; gap: 16px; padding: 8px 16px; min-height: 48px; border: 1px solid var(--file-stroke); border-radius: 8px; overflow: hidden; }
+.ds-file:hover, .ds-file.is-hover { background: var(--file-hover); border-color: var(--file-hover); }
+.ds-file__icon { flex: none; display: flex; color: var(--file-name); }
+.ds-file__body { flex: 1; min-width: 0; display: flex; flex-direction: column; }
+.ds-file__name { color: var(--file-name); font-weight: var(--font-weight-medium); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.ds-file__meta { color: var(--file-meta); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.ds-file__remove { all: unset; flex: none; display: flex; color: var(--file-remove); cursor: pointer; border-radius: 4px; visibility: hidden; }
+.ds-file:hover .ds-file__remove, .ds-file.is-hover .ds-file__remove, .ds-file:focus-within .ds-file__remove, .ds-file--check .ds-file__remove, .ds-file--error .ds-file__remove { visibility: visible; }
+.ds-file__remove:focus-visible { outline: 2px solid var(--tab-focus); }
+.ds-file--success .ds-file__icon { color: var(--file-success); }
+.ds-file__bar { position: absolute; left: 0; bottom: 0; height: 2px; background: var(--file-progress); transition: width .2s; }
+.ds-file--error { background: var(--file-error-bg); border-color: var(--file-error-stroke); }
+.ds-file--error:hover, .ds-file--error.is-hover { background: var(--file-error-bg) linear-gradient(var(--file-error-hover), var(--file-error-hover)); border-color: var(--file-hover); }
+.ds-file--error .ds-file__icon, .ds-file--error .ds-file__name { color: var(--file-error-text); }
+.ds-file--error .ds-file__meta { color: var(--choice-label); }
+.ds-file--s { gap: 8px; padding: 8px; min-height: 32px; }
+.ds-file--s .ds-file__meta { display: none; }
+
+/* ---------------- Radio button ---------------- */
+.ds-radio, .ds-check { display: inline-flex; align-items: center; gap: 8px; cursor: pointer; color: var(--choice-label); position: relative; }
+.ds-radio input, .ds-check input { position: absolute; opacity: 0; width: 16px; height: 16px; margin: 0; cursor: inherit; }
+.ds-radio__box { flex: none; width: 16px; height: 16px; border-radius: 50%; background: var(--choice-bg); border: 1px solid var(--choice-stroke); display: grid; place-items: center; }
+.ds-radio__box::after { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--choice-mark); transform: scale(0); transition: transform .12s; }
+.ds-radio:hover .ds-radio__box, .ds-radio.is-hover .ds-radio__box { background: linear-gradient(var(--choice-hover), var(--choice-hover)), var(--choice-bg); }
+.ds-radio input:checked + .ds-radio__box::after { transform: scale(1); }
+.ds-radio:has(input:checked), .ds-check:has(input:checked) { font-weight: var(--font-weight-medium); }
+.ds-radio:has(input:disabled), .ds-check:has(input:disabled) { cursor: not-allowed; }
+.ds-radio input:disabled + .ds-radio__box { background: var(--radio-disabled-bg); border-color: transparent; }
+.ds-radio input:disabled + .ds-radio__box::after { background: var(--choice-mark-disabled); }
+.ds-radio input:focus-visible + .ds-radio__box, .ds-check input:focus-visible + .ds-check__box { outline: 2px solid var(--tab-focus); outline-offset: 2px; }
+
+/* ---------------- Checkbox ---------------- */
+.ds-check__box { flex: none; width: 16px; height: 16px; border-radius: 4px; background: var(--choice-bg); border: 1px solid var(--choice-stroke); color: var(--choice-mark); display: grid; place-items: center; }
+.ds-check__tick, .ds-check__line { display: none; margin: -1px; }
+.ds-check__box svg { display: block; }
+.ds-check:hover .ds-check__box, .ds-check.is-hover .ds-check__box { background: linear-gradient(var(--choice-hover), var(--choice-hover)), var(--choice-bg); }
+.ds-check input:checked:not(:indeterminate) + .ds-check__box .ds-check__tick { display: block; }
+.ds-check input:indeterminate + .ds-check__box .ds-check__line { display: block; }
+.ds-check input:checked + .ds-check__box { border-color: #d4d4d4; }  /* hard-coded in Figma */
+.ds-check input:disabled + .ds-check__box { background: var(--check-disabled-bg); border-color: transparent; color: var(--choice-mark-disabled); }
+
+/* ---------------- Date picker ---------------- */
+.ds-date { display: inline-flex; gap: 32px; padding: 24px; background: var(--date-bg); border: 1px solid var(--date-stroke); border-radius: 8px; box-shadow: var(--date-shadow); }
+.ds-date__month { width: 224px; }
+.ds-date__head { position: relative; display: flex; align-items: center; justify-content: center; height: 32px; font-weight: var(--font-weight-medium); color: var(--date-day); }
+.ds-date__nav { all: unset; position: absolute; top: 8px; width: 16px; height: 16px; display: flex; color: var(--tab-arrow); cursor: pointer; border-radius: 4px; }
+.ds-date__nav--prev { left: 0; } .ds-date__nav--prev svg { transform: scaleX(-1); }
+.ds-date__nav--next { right: 0; }
+.ds-date__nav:focus-visible { outline: 2px solid var(--tab-focus); }
+.ds-date__grid { display: grid; grid-template-columns: repeat(7, 32px); grid-auto-rows: 32px; }
+.ds-date__wd { display: grid; place-items: center; color: var(--date-weekday); }
+.ds-date__day { all: unset; box-sizing: border-box; display: grid; place-items: center; color: var(--date-day); cursor: pointer; border: 2px solid transparent; border-radius: 8px; }
+.ds-date__day:hover { background: var(--color-gray-80-alpha-08); }
+.ds-date__day.is-range { background: var(--date-range-bg); border-radius: 0; }
+.ds-date__day[aria-pressed="true"], .ds-date__day[aria-selected="true"] { background: var(--date-selected-bg); border-color: var(--date-selected-ring); color: var(--date-selected-label); font-weight: var(--font-weight-semibold); border-radius: 8px; }
+.ds-date__day:focus-visible { outline: 2px solid var(--tab-focus); outline-offset: -2px; }

@@ -1,0 +1,1922 @@
+[
+ {
+  "group": "Section Icons",
+  "sub": "Brand Performance Monitor",
+  "label": "Executive Summary",
+  "layer": "Icon / 32pt / Executive Summary",
+  "size": "32x32",
+  "file": "section/executive-summary.svg",
+  "mono": true,
+  "colors": [
+   "#C2C2C2"
+  ],
+  "bytes": 2681
+ },
+ {
+  "group": "Section Icons",
+  "sub": "Product Post-Launch",
+  "label": "Global Summary",
+  "layer": "Component 1",
+  "size": "32x32",
+  "file": "section/global-summary.svg",
+  "mono": true,
+  "colors": [
+   "#C2C2C2"
+  ],
+  "bytes": 4438
+ },
+ {
+  "group": "Section Icons",
+  "sub": "Category Strategy Assistant",
+  "label": "External Category",
+  "layer": "Component 1",
+  "size": "32x32",
+  "file": "section/external-category.svg",
+  "mono": true,
+  "colors": [
+   "#C2C2C2"
+  ],
+  "bytes": 3496
+ },
+ {
+  "group": "Section Help Icons",
+  "sub": "",
+  "label": "Solution Overview",
+  "layer": "Icon / 16dp / Overview",
+  "size": "16x16",
+  "file": "help/solution-overview.svg",
+  "mono": true,
+  "colors": [
+   "#C2C2C2"
+  ],
+  "bytes": 1418
+ },
+ {
+  "group": "Section Icons",
+  "sub": "Category Strategy Assistant",
+  "label": "Saved Report Setups",
+  "layer": "Icon / 32pt / Saved Report Setups",
+  "size": "32x32",
+  "file": "section/saved-report-setups.svg",
+  "mono": true,
+  "colors": [
+   "#C2C2C2"
+  ],
+  "bytes": 5357
+ },
+ {
+  "group": "Section Icons",
+  "sub": "Artwork Assistant",
+  "label": "Automated Localizer",
+  "layer": "Icon / 32pt / Automated Localizer",
+  "size": "32x32",
+  "file": "section/automated-localizer.svg",
+  "mono": true,
+  "colors": [
+   "#C2C2C2"
+  ],
+  "bytes": 2970
+ },
+ {
+  "group": "Section Icons",
+  "sub": "Brand Performance Monitor",
+  "label": "Attribute Decomposition",
+  "layer": "Icon / 32pt / Attribute Decomposition",
+  "size": "32x32",
+  "file": "section/attribute-decomposition.svg",
+  "mono": true,
+  "colors": [
+   "#C2C2C2"
+  ],
+  "bytes": 2699
+ },
+ {
+  "group": "Section Icons",
+  "sub": "Product Post-Launch",
+  "label": "Consumer Perceptions",
+  "layer": "Component 4",
+  "size": "32x32",
+  "file": "section/consumer-perceptions.svg",
+  "mono": true,
+  "colors": [
+   "#C2C2C2"
+  ],
+  "bytes": 2752
+ },
+ {
+  "group": "Section Icons",
+  "sub": "Category Strategy Assistant",
+  "label": "Consumers",
+  "layer": "Component 4",
+  "size": "32x32",
+  "file": "section/consumers.svg",
+  "mono": true,
+  "colors": [
+   "#C2C2C2"
+  ],
+  "bytes": 2506
+ },
+ {
+  "group": "Section Help Icons",
+  "sub": "",
+  "label": "Quick Reference Guide",
+  "layer": "Icon / 16dp / Quick Reference",
+  "size": "16x16",
+  "file": "help/quick-reference-guide.svg",
+  "mono": true,
+  "colors": [
+   "#C2C2C2"
+  ],
+  "bytes": 3620
+ },
+ {
+  "group": "Section Help Icons",
+  "sub": "",
+  "label": "Solution Overview 2",
+  "layer": "Icon / 16dp / 2 Solution Overview",
+  "size": "19x12",
+  "file": "help/solution-overview-2.svg",
+  "mono": true,
+  "colors": [
+   "#C2C2C2"
+  ],
+  "bytes": 1116
+ },
+ {
+  "group": "Section Help Icons",
+  "sub": "",
+  "label": "Demo Videos 2",
+  "layer": "Icon / 16dp / 2 Demo Videos",
+  "size": "12x12",
+  "file": "help/demo-videos-2.svg",
+  "mono": true,
+  "colors": [
+   "#C2C2C2"
+  ],
+  "bytes": 904
+ },
+ {
+  "group": "Section Help Icons",
+  "sub": "",
+  "label": "Quick Reference Guide 2",
+  "layer": "Icon / 16dp / 2 Quick Reference Guide",
+  "size": "16x10",
+  "file": "help/quick-reference-guide-2.svg",
+  "mono": true,
+  "colors": [
+   "#C2C2C2"
+  ],
+  "bytes": 2613
+ },
+ {
+  "group": "Section Icons",
+  "sub": "Brand Performance Monitor",
+  "label": "Trade Driver Tree",
+  "layer": "Icon / 32pt / Trade Driver Tree",
+  "size": "32x32",
+  "file": "section/trade-driver-tree.svg",
+  "mono": true,
+  "colors": [
+   "#C2C2C2"
+  ],
+  "bytes": 2521
+ },
+ {
+  "group": "Section Icons",
+  "sub": "Brand Planning Assistant",
+  "label": "Competitor",
+  "layer": "Group 5562",
+  "size": "32x32",
+  "file": "section/competitor.svg",
+  "mono": true,
+  "colors": [
+   "#C2C2C2"
+  ],
+  "bytes": 855
+ },
+ {
+  "group": "Section Icons",
+  "sub": "Brand Performance Monitor",
+  "label": "Category Overview",
+  "layer": "Category Overview",
+  "size": "32x32",
+  "file": "section/category-overview.svg",
+  "mono": true,
+  "colors": [
+   "#C2C2C2"
+  ],
+  "bytes": 2754
+ },
+ {
+  "group": "Section Icons",
+  "sub": "Product Post-Launch",
+  "label": "Country Performance",
+  "layer": "Component 2",
+  "size": "32x32",
+  "file": "section/country-performance.svg",
+  "mono": true,
+  "colors": [
+   "#C2C2C2"
+  ],
+  "bytes": 2089
+ },
+ {
+  "group": "Section Icons",
+  "sub": "Category Strategy Assistant",
+  "label": "Internal Financials",
+  "layer": "Component 2",
+  "size": "32x32",
+  "file": "section/internal-financials.svg",
+  "mono": true,
+  "colors": [
+   "#C2C2C2"
+  ],
+  "bytes": 1890
+ },
+ {
+  "group": "Section Help Icons",
+  "sub": "",
+  "label": "Demo Videos",
+  "layer": "Icon / 16dp / Video",
+  "size": "16x16",
+  "file": "help/demo-videos.svg",
+  "mono": true,
+  "colors": [
+   "#C2C2C2"
+  ],
+  "bytes": 1862
+ },
+ {
+  "group": "Section Icons",
+  "sub": "Category Strategy Assistant",
+  "label": "Media Report",
+  "layer": "Icon / 32pt / Media Report",
+  "size": "32x32",
+  "file": "section/media-report.svg",
+  "mono": true,
+  "colors": [
+   "#C2C2C2"
+  ],
+  "bytes": 4434
+ },
+ {
+  "group": "Section Icons",
+  "sub": "Brand Planning Assistant",
+  "label": "Finance",
+  "layer": "Group 5564",
+  "size": "32x32",
+  "file": "section/finance.svg",
+  "mono": true,
+  "colors": [
+   "#C2C2C2"
+  ],
+  "bytes": 721
+ },
+ {
+  "group": "Section Icons",
+  "sub": "Artwork Assistant",
+  "label": "Copy Reviewer",
+  "layer": "Icon / 32pt / Copy Reviewer",
+  "size": "32x32",
+  "file": "section/copy-reviewer.svg",
+  "mono": true,
+  "colors": [
+   "#C2C2C2"
+  ],
+  "bytes": 1496
+ },
+ {
+  "group": "Section Icons",
+  "sub": "Artwork Assistant",
+  "label": "Cross-Functional Rules",
+  "layer": "Icon / 32pt / Cross-Functional Rules",
+  "size": "32x32",
+  "file": "section/cross-functional-rules.svg",
+  "mono": true,
+  "colors": [
+   "#C2C2C2"
+  ],
+  "bytes": 4509
+ },
+ {
+  "group": "Section Icons",
+  "sub": "Artwork Assistant",
+  "label": "Pre-Approved Translations",
+  "layer": "Icon / 32pt / Pre-Approved Translations",
+  "size": "32x32",
+  "file": "section/pre-approved-translations.svg",
+  "mono": true,
+  "colors": [
+   "#C2C2C2"
+  ],
+  "bytes": 3718
+ },
+ {
+  "group": "Section Icons",
+  "sub": "Brand Performance Monitor",
+  "label": "External Universe",
+  "layer": "Icon / 16pt / Extended Universe",
+  "size": "32x32",
+  "file": "section/external-universe.svg",
+  "mono": true,
+  "colors": [
+   "#C2C2C2"
+  ],
+  "bytes": 588
+ },
+ {
+  "group": "Section Icons",
+  "sub": "Brand Performance Monitor",
+  "label": "Brand Driver Tree",
+  "layer": "Icon / 32pt / Brand Driver Tree",
+  "size": "32x32",
+  "file": "section/brand-driver-tree.svg",
+  "mono": true,
+  "colors": [
+   "#C2C2C2"
+  ],
+  "bytes": 3445
+ },
+ {
+  "group": "Section Icons",
+  "sub": "Product Post-Launch",
+  "label": "Analysis Configurations",
+  "layer": "Component 3",
+  "size": "32x32",
+  "file": "section/analysis-configurations.svg",
+  "mono": true,
+  "colors": [
+   "#C2C2C2"
+  ],
+  "bytes": 5262
+ },
+ {
+  "group": "Section Icons",
+  "sub": "Brand Planning Assistant",
+  "label": "Customer",
+  "layer": "Vector 157",
+  "size": "32x32",
+  "file": "section/customer.svg",
+  "mono": true,
+  "colors": [
+   "#C2C2C2"
+  ],
+  "bytes": 668
+ },
+ {
+  "group": "UI Icons 16pt",
+  "sub": "",
+  "label": "FAQ",
+  "layer": "Icon / 16pt / FAQ",
+  "size": "16x16",
+  "file": "ui-16pt/faq.svg",
+  "mono": true,
+  "colors": [
+   "#999999"
+  ],
+  "bytes": 2562
+ },
+ {
+  "group": "UI Icons 24pt",
+  "sub": "",
+  "label": "Search",
+  "layer": "Icon / 24pt / Search",
+  "size": "24x24",
+  "file": "ui-24pt/search.svg",
+  "mono": true,
+  "colors": [
+   "#C2C2C2"
+  ],
+  "bytes": 349
+ },
+ {
+  "group": "UI Icons 32pt",
+  "sub": "",
+  "label": "All Solutions",
+  "layer": "Icon / 32dp / All Solutions",
+  "size": "32x32",
+  "file": "ui-32pt/all-solutions.svg",
+  "mono": true,
+  "colors": [
+   "#D9D9D9"
+  ],
+  "bytes": 1054
+ },
+ {
+  "group": "UI Icons 16pt",
+  "sub": "",
+  "label": "Reset",
+  "layer": "Icon / 16pt / Reset",
+  "size": "16x16",
+  "file": "ui-16pt/reset.svg",
+  "mono": true,
+  "colors": [
+   "#999999"
+  ],
+  "bytes": 1031
+ },
+ {
+  "group": "UI Icons 24pt",
+  "sub": "",
+  "label": "New Folder",
+  "layer": "Icon / 24pt / NewFolder",
+  "size": "24x24",
+  "file": "ui-24pt/new-folder.svg",
+  "mono": true,
+  "colors": [
+   "#C2C2C2"
+  ],
+  "bytes": 1078
+ },
+ {
+  "group": "UI Icons 24pt",
+  "sub": "",
+  "label": "Folder",
+  "layer": "Icon / 24pt / Folder",
+  "size": "24x24",
+  "file": "ui-24pt/folder.svg",
+  "mono": true,
+  "colors": [
+   "#C2C2C2"
+  ],
+  "bytes": 976
+ },
+ {
+  "group": "UI Icons 24pt",
+  "sub": "",
+  "label": "Account",
+  "layer": "Icon / 24pt / Account",
+  "size": "24x24",
+  "file": "ui-24pt/account.svg",
+  "mono": true,
+  "colors": [
+   "#C2C2C2"
+  ],
+  "bytes": 1820
+ },
+ {
+  "group": "UI Icons 16pt",
+  "sub": "",
+  "label": "Info",
+  "layer": "Icon / 16pt / Info",
+  "size": "16x16",
+  "file": "ui-16pt/info.svg",
+  "mono": false,
+  "colors": [
+   "#3382C8"
+  ],
+  "bytes": 1460
+ },
+ {
+  "group": "UI Icons 24pt",
+  "sub": "",
+  "label": "PPT",
+  "layer": "Icon / 24pt / PowerPoint",
+  "size": "24x24",
+  "file": "ui-24pt/ppt.svg",
+  "mono": true,
+  "colors": [
+   "#C2C2C2"
+  ],
+  "bytes": 1157
+ },
+ {
+  "group": "UI Icons 16pt",
+  "sub": "",
+  "label": "Checkbox Line",
+  "layer": "Icon / 16pt / CheckboxLine",
+  "size": "16x16",
+  "file": "ui-16pt/checkbox-line.svg",
+  "mono": true,
+  "colors": [
+   "#999999"
+  ],
+  "bytes": 248
+ },
+ {
+  "group": "UI Icons 24pt",
+  "sub": "",
+  "label": "Add",
+  "layer": "Icon / 24pt / Add",
+  "size": "24x24",
+  "file": "ui-24pt/add.svg",
+  "mono": true,
+  "colors": [
+   "#C2C2C2"
+  ],
+  "bytes": 312
+ },
+ {
+  "group": "UI Icons 24pt",
+  "sub": "",
+  "label": "Star Empty",
+  "layer": "Icon / 16pt / Star Empty",
+  "size": "24x24",
+  "file": "ui-24pt/star-empty.svg",
+  "mono": true,
+  "colors": [
+   "#C2C2C2"
+  ],
+  "bytes": 547
+ },
+ {
+  "group": "UI Icons 24pt",
+  "sub": "",
+  "label": "Sidebar",
+  "layer": "Icon / 24pt / Sidebar",
+  "size": "24x24",
+  "file": "ui-24pt/sidebar.svg",
+  "mono": true,
+  "colors": [
+   "#C2C2C2"
+  ],
+  "bytes": 311
+ },
+ {
+  "group": "UI Icons 24pt",
+  "sub": "",
+  "label": "Star Filled",
+  "layer": "Icon / 16pt / Star Full",
+  "size": "24x24",
+  "file": "ui-24pt/star-filled.svg",
+  "mono": true,
+  "colors": [
+   "#C2C2C2"
+  ],
+  "bytes": 373
+ },
+ {
+  "group": "UI Icons 16pt",
+  "sub": "",
+  "label": "Clipboard",
+  "layer": "Icon / 16dpt / Clipboard",
+  "size": "16x16",
+  "file": "ui-16pt/clipboard.svg",
+  "mono": true,
+  "colors": [
+   "#999999"
+  ],
+  "bytes": 909
+ },
+ {
+  "group": "UI Icons 24pt",
+  "sub": "",
+  "label": "Send Prompt",
+  "layer": "Icon / 24pt / SendPrompt",
+  "size": "24x24",
+  "file": "ui-24pt/send-prompt.svg",
+  "mono": true,
+  "colors": [
+   "#C2C2C2"
+  ],
+  "bytes": 728
+ },
+ {
+  "group": "UI Icons 24pt",
+  "sub": "",
+  "label": "AI",
+  "layer": "Icon / 16pt / AI",
+  "size": "24x24",
+  "file": "ui-24pt/ai.svg",
+  "mono": true,
+  "colors": [
+   "#C2C2C2"
+  ],
+  "bytes": 758
+ },
+ {
+  "group": "UI Icons 24pt",
+  "sub": "",
+  "label": "Message",
+  "layer": "Icon / 24pt / Message",
+  "size": "24x24",
+  "file": "ui-24pt/message.svg",
+  "mono": true,
+  "colors": [
+   "#C2C2C2"
+  ],
+  "bytes": 841
+ },
+ {
+  "group": "UI Icons 24pt",
+  "sub": "",
+  "label": "Brand",
+  "layer": "Icon / 24pt / brand",
+  "size": "24x24",
+  "file": "ui-24pt/brand.svg",
+  "mono": true,
+  "colors": [
+   "#C2C2C2"
+  ],
+  "bytes": 1130
+ },
+ {
+  "group": "UI Icons 24pt",
+  "sub": "",
+  "label": "Tool",
+  "layer": "Icon / 24pt / Tool",
+  "size": "24x24",
+  "file": "ui-24pt/tool.svg",
+  "mono": true,
+  "colors": [
+   "#C2C2C2"
+  ],
+  "bytes": 1073
+ },
+ {
+  "group": "UI Icons 24pt",
+  "sub": "",
+  "label": "Country",
+  "layer": "Icon / 24pt / Country",
+  "size": "24x24",
+  "file": "ui-24pt/country.svg",
+  "mono": true,
+  "colors": [
+   "#C2C2C2"
+  ],
+  "bytes": 585
+ },
+ {
+  "group": "UI Icons 24pt",
+  "sub": "",
+  "label": "Benefits",
+  "layer": "Icon / 24pt / Benefits",
+  "size": "24x24",
+  "file": "ui-24pt/benefits.svg",
+  "mono": true,
+  "colors": [
+   "#ADADAD"
+  ],
+  "bytes": 520
+ },
+ {
+  "group": "UI Icons 24pt",
+  "sub": "",
+  "label": "2x2",
+  "layer": "Icon / 24pt / 2x2",
+  "size": "24x24",
+  "file": "ui-24pt/2x2.svg",
+  "mono": true,
+  "colors": [
+   "#C2C2C2"
+  ],
+  "bytes": 1615
+ },
+ {
+  "group": "UI Icons 24pt",
+  "sub": "",
+  "label": "Demand Space",
+  "layer": "Icon / 24pt / Demand Space",
+  "size": "24x24",
+  "file": "ui-24pt/demand-space.svg",
+  "mono": true,
+  "colors": [
+   "#ADADAD"
+  ],
+  "bytes": 505
+ },
+ {
+  "group": "UI Icons 24pt",
+  "sub": "",
+  "label": "4x4",
+  "layer": "Icon / 24pt / 4x4",
+  "size": "24x24",
+  "file": "ui-24pt/4x4.svg",
+  "mono": true,
+  "colors": [
+   "#C2C2C2"
+  ],
+  "bytes": 1826
+ },
+ {
+  "group": "UI Icons 24pt",
+  "sub": "",
+  "label": "Time",
+  "layer": "Icon / 24pt / Time",
+  "size": "24x24",
+  "file": "ui-24pt/time.svg",
+  "mono": true,
+  "colors": [
+   "#C2C2C2"
+  ],
+  "bytes": 2776
+ },
+ {
+  "group": "UI Icons 24pt",
+  "sub": "",
+  "label": "Language",
+  "layer": "Icon / 24pt / Language",
+  "size": "24x24",
+  "file": "ui-24pt/language.svg",
+  "mono": true,
+  "colors": [
+   "#C2C2C2"
+  ],
+  "bytes": 1014
+ },
+ {
+  "group": "UI Icons 24pt",
+  "sub": "",
+  "label": "External Link",
+  "layer": "Icon / 24pt / External Icon",
+  "size": "24x24",
+  "file": "ui-24pt/external-link.svg",
+  "mono": true,
+  "colors": [
+   "#C2C2C2"
+  ],
+  "bytes": 691
+ },
+ {
+  "group": "UI Icons 16pt",
+  "sub": "",
+  "label": "Check",
+  "layer": "Icon / 16pt / CheckboxCheck",
+  "size": "16x16",
+  "file": "ui-16pt/check.svg",
+  "mono": true,
+  "colors": [
+   "#999999"
+  ],
+  "bytes": 308
+ },
+ {
+  "group": "UI Icons 24pt",
+  "sub": "",
+  "label": "Sidebar Panel",
+  "layer": "Icon / 24pt / Sidebar",
+  "size": "24x24",
+  "file": "ui-24pt/sidebar-panel.svg",
+  "mono": true,
+  "colors": [
+   "#C2C2C2"
+  ],
+  "bytes": 371
+ },
+ {
+  "group": "UI Icons 16pt",
+  "sub": "",
+  "label": "Settings",
+  "layer": "Icon / 16pt / Settings",
+  "size": "16x16",
+  "file": "ui-16pt/settings.svg",
+  "mono": true,
+  "colors": [
+   "#999999"
+  ],
+  "bytes": 2505
+ },
+ {
+  "group": "UI Icons 24pt",
+  "sub": "",
+  "label": "Copy to clipboard",
+  "layer": "Icon Enlarge",
+  "size": "24x24",
+  "file": "ui-24pt/copy-to-clipboard.svg",
+  "mono": true,
+  "colors": [
+   "#EBEBEB"
+  ],
+  "bytes": 292,
+  "note": "Figma layer is only a corner fragment (\"Icon Enlarge\"), not a clipboard icon"
+ },
+ {
+  "group": "UI Icons 16pt",
+  "sub": "",
+  "label": "Error",
+  "layer": "Icon / 16pt / Error",
+  "size": "16x16",
+  "file": "ui-16pt/error.svg",
+  "mono": false,
+  "colors": [
+   "#EB5555"
+  ],
+  "bytes": 701
+ },
+ {
+  "group": "UI Icons 16pt",
+  "sub": "",
+  "label": "Warning",
+  "layer": "Icon / 16pt / Warning ",
+  "size": "16x16",
+  "file": "ui-16pt/warning.svg",
+  "mono": false,
+  "colors": [
+   "#D7A040"
+  ],
+  "bytes": 399
+ },
+ {
+  "group": "UI Icons 16pt",
+  "sub": "",
+  "label": "Sign Out",
+  "layer": "Icon / 16dp / Sign Out",
+  "size": "16x16",
+  "file": "ui-16pt/sign-out.svg",
+  "mono": true,
+  "colors": [
+   "#999999"
+  ],
+  "bytes": 602
+ },
+ {
+  "group": "UI Icons 16pt",
+  "sub": "",
+  "label": "Leave",
+  "layer": "Icon / 16pt / Leave",
+  "size": "16x16",
+  "file": "ui-16pt/leave.svg",
+  "mono": true,
+  "colors": [
+   "#999999"
+  ],
+  "bytes": 795
+ },
+ {
+  "group": "UI Icons 16pt",
+  "sub": "",
+  "label": "Deactive",
+  "layer": "Icon / 16pt / Deactive",
+  "size": "16x16",
+  "file": "ui-16pt/deactive.svg",
+  "mono": true,
+  "colors": [
+   "#999999"
+  ],
+  "bytes": 710,
+  "note": "Figma label says \"Leave\" (duplicate label)"
+ },
+ {
+  "group": "UI Icons 16pt",
+  "sub": "",
+  "label": "Close",
+  "layer": "Icon / 16pt / Close",
+  "size": "16x16",
+  "file": "ui-16pt/close.svg",
+  "mono": true,
+  "colors": [
+   "#BABCC8"
+  ],
+  "bytes": 408
+ },
+ {
+  "group": "UI Icons 24pt",
+  "sub": "",
+  "label": "Close",
+  "layer": "Icon / 24pt / Close",
+  "size": "24x24",
+  "file": "ui-24pt/close.svg",
+  "mono": true,
+  "colors": [
+   "#BABCC8"
+  ],
+  "bytes": 439
+ },
+ {
+  "group": "UI Icons 16pt",
+  "sub": "",
+  "label": "Expand",
+  "layer": "Icon / 16pt / Expand",
+  "size": "16x16",
+  "file": "ui-16pt/expand.svg",
+  "mono": true,
+  "colors": [
+   "#999999"
+  ],
+  "bytes": 421
+ },
+ {
+  "group": "UI Icons 16pt",
+  "sub": "",
+  "label": "Refresh",
+  "layer": "Icon / 16dp / Refresh",
+  "size": "16x16",
+  "file": "ui-16pt/refresh.svg",
+  "mono": true,
+  "colors": [
+   "#999999"
+  ],
+  "bytes": 1252
+ },
+ {
+  "group": "UI Icons 16pt",
+  "sub": "",
+  "label": "Collapse",
+  "layer": "Icon / 16pt / Collapse",
+  "size": "16x16",
+  "file": "ui-16pt/collapse.svg",
+  "mono": true,
+  "colors": [
+   "#9698A2"
+  ],
+  "bytes": 423
+ },
+ {
+  "group": "UI Icons 16pt",
+  "sub": "",
+  "label": "Revert",
+  "layer": "Icon / 16dp / Revert",
+  "size": "16x16",
+  "file": "ui-16pt/revert.svg",
+  "mono": true,
+  "colors": [
+   "#9698A2"
+  ],
+  "bytes": 730
+ },
+ {
+  "group": "UI Icons 16pt",
+  "sub": "",
+  "label": "Remove Selection",
+  "layer": "Icon / 16dp / RemoveSelection",
+  "size": "16x16",
+  "file": "ui-16pt/remove-selection.svg",
+  "mono": true,
+  "colors": [
+   "#D6D6D6"
+  ],
+  "bytes": 639
+ },
+ {
+  "group": "UI Icons 16pt",
+  "sub": "",
+  "label": "Folder",
+  "layer": "Icon / 16pt / Folder",
+  "size": "16x16",
+  "file": "ui-16pt/folder.svg",
+  "mono": true,
+  "colors": [
+   "#9698A2"
+  ],
+  "bytes": 610
+ },
+ {
+  "group": "UI Icons 16pt",
+  "sub": "",
+  "label": "Add",
+  "layer": "Icon / 16pt / Add",
+  "size": "16x16",
+  "file": "ui-16pt/add.svg",
+  "mono": true,
+  "colors": [
+   "#999999"
+  ],
+  "bytes": 312
+ },
+ {
+  "group": "UI Icons 16pt",
+  "sub": "",
+  "label": "Search",
+  "layer": "Icon / 24dp / Search Small",
+  "size": "16x16",
+  "file": "ui-16pt/search.svg",
+  "mono": true,
+  "colors": [
+   "#999999"
+  ],
+  "bytes": 728
+ },
+ {
+  "group": "UI Icons 16pt",
+  "sub": "",
+  "label": "Data",
+  "layer": "Icon / 16pt / Data",
+  "size": "16x16",
+  "file": "ui-16pt/data.svg",
+  "mono": true,
+  "colors": [
+   "#9698A2"
+  ],
+  "bytes": 417
+ },
+ {
+  "group": "UI Icons 16pt",
+  "sub": "",
+  "label": "Minus",
+  "layer": "Icon / 16pt / Minus",
+  "size": "16x16",
+  "file": "ui-16pt/minus.svg",
+  "mono": true,
+  "colors": [
+   "#9698A2"
+  ],
+  "bytes": 247
+ },
+ {
+  "group": "UI Icons 16pt",
+  "sub": "",
+  "label": "Add New Row",
+  "layer": "Icon / 16pt / Add Row",
+  "size": "16x16",
+  "file": "ui-16pt/add-new-row.svg",
+  "mono": true,
+  "colors": [
+   "#ADADAD"
+  ],
+  "bytes": 1101
+ },
+ {
+  "group": "UI Icons 16pt",
+  "sub": "",
+  "label": "Pin",
+  "layer": "Icon / 16pt / Pin",
+  "size": "16x16",
+  "file": "ui-16pt/pin.svg",
+  "mono": true,
+  "colors": [
+   "#9698A2"
+  ],
+  "bytes": 1266
+ },
+ {
+  "group": "UI Icons 16pt",
+  "sub": "",
+  "label": "Trash",
+  "layer": "Icon / 16pt / Trash",
+  "size": "16x16",
+  "file": "ui-16pt/trash.svg",
+  "mono": true,
+  "colors": [
+   "#999999"
+  ],
+  "bytes": 756
+ },
+ {
+  "group": "UI Icons 16pt",
+  "sub": "",
+  "label": "Save",
+  "layer": "Icon / 16pt / Save",
+  "size": "16x16",
+  "file": "ui-16pt/save.svg",
+  "mono": true,
+  "colors": [
+   "#9698A2"
+  ],
+  "bytes": 1059
+ },
+ {
+  "group": "UI Icons 16pt",
+  "sub": "",
+  "label": "Upload",
+  "layer": "Icon / 16dp / Upload",
+  "size": "16x16",
+  "file": "ui-16pt/upload.svg",
+  "mono": true,
+  "colors": [
+   "#9698A2"
+  ],
+  "bytes": 605
+ },
+ {
+  "group": "UI Icons 16pt",
+  "sub": "",
+  "label": "File",
+  "layer": "Icon / 16dp / File",
+  "size": "16x16",
+  "file": "ui-16pt/file.svg",
+  "mono": true,
+  "colors": [
+   "#999999"
+  ],
+  "bytes": 810
+ },
+ {
+  "group": "UI Icons 16pt",
+  "sub": "",
+  "label": "Edit",
+  "layer": "Icon / 16dp / Edit",
+  "size": "16x16",
+  "file": "ui-16pt/edit.svg",
+  "mono": true,
+  "colors": [
+   "#9698A2"
+  ],
+  "bytes": 1149
+ },
+ {
+  "group": "UI Icons 16pt",
+  "sub": "",
+  "label": "Loader",
+  "layer": "Icon / 16dp / Loader",
+  "size": "16x16",
+  "file": "ui-16pt/loader.svg",
+  "mono": true,
+  "colors": [],
+  "bytes": 1551,
+  "note": "Rebuilt: Figma uses an angular gradient, which SVG cannot express"
+ },
+ {
+  "group": "UI Icons 16pt",
+  "sub": "",
+  "label": "Database",
+  "layer": "database_24dp_5F6368_FILL0_wght400_GRAD0_opsz24 1",
+  "size": "16x16",
+  "file": "ui-16pt/database.svg",
+  "mono": true,
+  "colors": [
+   "#999999"
+  ],
+  "bytes": 2573,
+  "note": "Figma label says \"Copy to clipboard\", layer is a database icon"
+ },
+ {
+  "group": "UI Icons 16pt",
+  "sub": "",
+  "label": "Text",
+  "layer": "Icon / 16pt / Text",
+  "size": "16x16",
+  "file": "ui-16pt/text.svg",
+  "mono": true,
+  "colors": [
+   "#999999"
+  ],
+  "bytes": 750
+ },
+ {
+  "group": "UI Icons 16pt",
+  "sub": "",
+  "label": "Line Chart",
+  "layer": "Icon / 16dpt / Copy Clipboard",
+  "size": "16x16",
+  "file": "ui-16pt/line-chart.svg",
+  "mono": true,
+  "colors": [
+   "#999999"
+  ],
+  "bytes": 519,
+  "note": "Figma layer is named \"Copy Clipboard\""
+ },
+ {
+  "group": "UI Icons 16pt",
+  "sub": "",
+  "label": "Feedback",
+  "layer": "Icon / 16pt / Feedback",
+  "size": "16x16",
+  "file": "ui-16pt/feedback.svg",
+  "mono": true,
+  "colors": [
+   "#999999"
+  ],
+  "bytes": 1045
+ },
+ {
+  "group": "UI Icons 16pt",
+  "sub": "",
+  "label": "Bar Chart",
+  "layer": "Icon / 16pt / BarChart",
+  "size": "16x16",
+  "file": "ui-16pt/bar-chart.svg",
+  "mono": true,
+  "colors": [
+   "#999999"
+  ],
+  "bytes": 342
+ },
+ {
+  "group": "UI Icons 16pt",
+  "sub": "",
+  "label": "Brand",
+  "layer": "Icon / 16dp / Brand",
+  "size": "16x16",
+  "file": "ui-16pt/brand.svg",
+  "mono": true,
+  "colors": [
+   "#999999"
+  ],
+  "bytes": 2051
+ },
+ {
+  "group": "UI Icons 16pt",
+  "sub": "",
+  "label": "Section",
+  "layer": "Icon / 16dp / Section",
+  "size": "16x16",
+  "file": "ui-16pt/section.svg",
+  "mono": true,
+  "colors": [
+   "#999999"
+  ],
+  "bytes": 855
+ },
+ {
+  "group": "UI Icons 16pt",
+  "sub": "",
+  "label": "Like",
+  "layer": "Icon / 16dp / Like",
+  "size": "16x16",
+  "file": "ui-16pt/like.svg",
+  "mono": true,
+  "colors": [
+   "#999999"
+  ],
+  "bytes": 841
+ },
+ {
+  "group": "UI Icons 16pt",
+  "sub": "",
+  "label": "Forward Highlight",
+  "layer": "Icon / 16pt / Forward Highlight",
+  "size": "16x16",
+  "file": "ui-16pt/forward-highlight.svg",
+  "mono": true,
+  "colors": [
+   "#999999"
+  ],
+  "bytes": 998
+ },
+ {
+  "group": "UI Icons 16pt",
+  "sub": "",
+  "label": "Comments",
+  "layer": "Icon / 16pt / Comments",
+  "size": "16x16",
+  "file": "ui-16pt/comments.svg",
+  "mono": true,
+  "colors": [
+   "#999999"
+  ],
+  "bytes": 853
+ },
+ {
+  "group": "UI Icons 16pt",
+  "sub": "",
+  "label": "Regenerate Concept",
+  "layer": "Icon / 16pt / Regenerate Concept",
+  "size": "16x16",
+  "file": "ui-16pt/regenerate-concept.svg",
+  "mono": true,
+  "colors": [
+   "#999999"
+  ],
+  "bytes": 956
+ },
+ {
+  "group": "UI Icons 16pt",
+  "sub": "",
+  "label": "Forward Message",
+  "layer": "Icon / 16pt / Forward Message",
+  "size": "16x16",
+  "file": "ui-16pt/forward-message.svg",
+  "mono": true,
+  "colors": [
+   "#999999"
+  ],
+  "bytes": 1193
+ },
+ {
+  "group": "UI Icons 16pt",
+  "sub": "",
+  "label": "Attach File",
+  "layer": "Icon / 16pt / Attach",
+  "size": "16x16",
+  "file": "ui-16pt/attach-file.svg",
+  "mono": true,
+  "colors": [
+   "#999999"
+  ],
+  "bytes": 1427
+ },
+ {
+  "group": "UI Icons 16pt",
+  "sub": "",
+  "label": "Category",
+  "layer": "Icon / 16pt / Category",
+  "size": "16x16",
+  "file": "ui-16pt/category.svg",
+  "mono": true,
+  "colors": [
+   "#C2C2C2"
+  ],
+  "bytes": 2754
+ },
+ {
+  "group": "UI Icons 16pt",
+  "sub": "",
+  "label": "Lock",
+  "layer": "Icon / 16pt / Lock",
+  "size": "16x16",
+  "file": "ui-16pt/lock.svg",
+  "mono": true,
+  "colors": [
+   "#ADADAD"
+  ],
+  "bytes": 575
+ },
+ {
+  "group": "UI Icons 16pt",
+  "sub": "",
+  "label": "Dislike",
+  "layer": "Icon / 16dp / Dislike",
+  "size": "16x16",
+  "file": "ui-16pt/dislike.svg",
+  "mono": true,
+  "colors": [
+   "#999999"
+  ],
+  "bytes": 845
+ },
+ {
+  "group": "UI Icons 16pt",
+  "sub": "",
+  "label": "Visibility Off",
+  "layer": "Icon / 16pt / Visibility Off",
+  "size": "16x16",
+  "file": "ui-16pt/visibility-off.svg",
+  "mono": true,
+  "colors": [
+   "#C2C2C2"
+  ],
+  "bytes": 2239
+ },
+ {
+  "group": "UI Icons 16pt",
+  "sub": "",
+  "label": "Visibility On",
+  "layer": "Icon / 16pt / Visibility On",
+  "size": "16x16",
+  "file": "ui-16pt/visibility-on.svg",
+  "mono": true,
+  "colors": [
+   "#C2C2C2"
+  ],
+  "bytes": 1784
+ },
+ {
+  "group": "UI Icons 16pt",
+  "sub": "",
+  "label": "Divider",
+  "layer": "Icon / 16pt / Divider",
+  "size": "16x16",
+  "file": "ui-16pt/divider.svg",
+  "mono": true,
+  "colors": [
+   "#ADADAD"
+  ],
+  "bytes": 248
+ },
+ {
+  "group": "UI Icons 16pt",
+  "sub": "",
+  "label": "Arrow Upward",
+  "layer": "Icon / 16pt / ArrowUpWard",
+  "size": "16x16",
+  "file": "ui-16pt/arrow-upward.svg",
+  "mono": true,
+  "colors": [
+   "#999999"
+  ],
+  "bytes": 335
+ },
+ {
+  "group": "UI Icons 16pt",
+  "sub": "",
+  "label": "Arrow Downward",
+  "layer": "Icon / 16pt / ArrowDownWard",
+  "size": "16x16",
+  "file": "ui-16pt/arrow-downward.svg",
+  "mono": true,
+  "colors": [
+   "#999999"
+  ],
+  "bytes": 336
+ },
+ {
+  "group": "UI Icons 16pt",
+  "sub": "",
+  "label": "Arrow Rightward",
+  "layer": "Icon / 16pt / ArrowRightWard",
+  "size": "16x16",
+  "file": "ui-16pt/arrow-rightward.svg",
+  "mono": true,
+  "colors": [
+   "#999999"
+  ],
+  "bytes": 360
+ },
+ {
+  "group": "UI Icons 16pt",
+  "sub": "",
+  "label": "Arrow Down",
+  "layer": "Icon / 16pt / ArrowDown",
+  "size": "16x16",
+  "file": "ui-16pt/arrow-down.svg",
+  "mono": true,
+  "colors": [
+   "#9698A2"
+  ],
+  "bytes": 312,
+  "note": "Figma label says \"Copy to clipboard\", layer is ArrowDown"
+ },
+ {
+  "group": "UI Icons 16pt",
+  "sub": "",
+  "label": "Arrow Left",
+  "layer": "Icon / 24pt / ArrowLeft",
+  "size": "16x16",
+  "file": "ui-16pt/arrow-left.svg",
+  "mono": true,
+  "colors": [
+   "#999999"
+  ],
+  "bytes": 342
+ },
+ {
+  "group": "UI Icons 16pt",
+  "sub": "",
+  "label": "Arrow Right",
+  "layer": "Icon / 24pt / ArrowRight",
+  "size": "16x16",
+  "file": "ui-16pt/arrow-right.svg",
+  "mono": true,
+  "colors": [
+   "#999999"
+  ],
+  "bytes": 340
+ },
+ {
+  "group": "UI Icons 16pt",
+  "sub": "",
+  "label": "More",
+  "layer": "Icon / 16pt / More",
+  "size": "16x16",
+  "file": "ui-16pt/more.svg",
+  "mono": true,
+  "colors": [
+   "#999999"
+  ],
+  "bytes": 370
+ },
+ {
+  "group": "UI Icons 16pt",
+  "sub": "",
+  "label": "Configuration",
+  "layer": "Icon / 16pt / Configuration",
+  "size": "16x16",
+  "file": "ui-16pt/configuration.svg",
+  "mono": true,
+  "colors": [
+   "#9698A2"
+  ],
+  "bytes": 579
+ },
+ {
+  "group": "UI Icons 16pt",
+  "sub": "",
+  "label": "Account",
+  "layer": "Icon / 16pt / Account",
+  "size": "16x15",
+  "file": "ui-16pt/account.svg",
+  "mono": true,
+  "colors": [
+   "#999999"
+  ],
+  "bytes": 1369
+ },
+ {
+  "group": "UI Icons 16pt",
+  "sub": "",
+  "label": "Category 2",
+  "layer": "Icon / 16pt / Category",
+  "size": "16x16",
+  "file": "ui-16pt/category-2.svg",
+  "mono": true,
+  "colors": [
+   "#C2C2C2"
+  ],
+  "bytes": 2773,
+  "note": "Second variant with the same name in Figma"
+ },
+ {
+  "group": "UI Icons 16pt",
+  "sub": "",
+  "label": "Like 2",
+  "layer": "Icon / 16dp / Like",
+  "size": "16x16",
+  "file": "ui-16pt/like-2.svg",
+  "mono": true,
+  "colors": [
+   "#999999"
+  ],
+  "bytes": 742,
+  "note": "Second variant with the same name in Figma"
+ },
+ {
+  "group": "UI Icons 16pt",
+  "sub": "",
+  "label": "Dislike 2",
+  "layer": "Icon / 16dp / Dislike",
+  "size": "16x16",
+  "file": "ui-16pt/dislike-2.svg",
+  "mono": true,
+  "colors": [
+   "#999999"
+  ],
+  "bytes": 731,
+  "note": "Second variant with the same name in Figma"
+ },
+ {
+  "group": "UI Icons 16pt",
+  "sub": "",
+  "label": "Shared Chat",
+  "layer": "Icon / 16dp / Shared Chat",
+  "size": "16x16",
+  "file": "ui-16pt/shared-chat.svg",
+  "mono": true,
+  "colors": [
+   "#999999"
+  ],
+  "bytes": 677
+ },
+ {
+  "group": "UI Icons 16pt",
+  "sub": "",
+  "label": "Type",
+  "layer": "Icon / 16dp / Type",
+  "size": "16x16",
+  "file": "ui-16pt/type.svg",
+  "mono": true,
+  "colors": [
+   "#999999"
+  ],
+  "bytes": 2856
+ },
+ {
+  "group": "UI Icons 16pt",
+  "sub": "",
+  "label": "List",
+  "layer": "Icon / 16dp / List",
+  "size": "16x16",
+  "file": "ui-16pt/list.svg",
+  "mono": true,
+  "colors": [
+   "#999999"
+  ],
+  "bytes": 872
+ },
+ {
+  "group": "UI Icons 16pt",
+  "sub": "",
+  "label": "Acknowledged",
+  "layer": "Icon / 16dp / Acknowledged",
+  "size": "16x16",
+  "file": "ui-16pt/acknowledged.svg",
+  "mono": true,
+  "colors": [
+   "#999999"
+  ],
+  "bytes": 3048
+ },
+ {
+  "group": "UI Icons 16pt",
+  "sub": "",
+  "label": "Sidebar Hide",
+  "layer": "Icon / 16dp / Sidebar hide",
+  "size": "16x16",
+  "file": "ui-16pt/sidebar-hide.svg",
+  "mono": true,
+  "colors": [
+   "#999999"
+  ],
+  "bytes": 1156
+ },
+ {
+  "group": "UI Icons 16pt",
+  "sub": "",
+  "label": "Sidebar Show",
+  "layer": "Icon / 16dp / Sidebar show",
+  "size": "18x16",
+  "file": "ui-16pt/sidebar-show.svg",
+  "mono": true,
+  "colors": [
+   "#999999"
+  ],
+  "bytes": 1162
+ },
+ {
+  "group": "UI Icons 16pt",
+  "sub": "",
+  "label": "Citations",
+  "layer": "Icon / 16dp / Citations",
+  "size": "16x16",
+  "file": "ui-16pt/citations.svg",
+  "mono": true,
+  "colors": [
+   "#999999"
+  ],
+  "bytes": 1009
+ },
+ {
+  "group": "UI Icons 24pt",
+  "sub": "",
+  "label": "Link",
+  "layer": "Icon / 24dp / Link",
+  "size": "24x24",
+  "file": "ui-24pt/link.svg",
+  "mono": true,
+  "colors": [
+   "#ADADAD"
+  ],
+  "bytes": 1154
+ },
+ {
+  "group": "UI Icons 24pt",
+  "sub": "",
+  "label": "Play",
+  "layer": "Icon / 24dp / Play",
+  "size": "24x24",
+  "file": "ui-24pt/play.svg",
+  "mono": true,
+  "colors": [
+   "#ADADAD"
+  ],
+  "bytes": 513
+ },
+ {
+  "group": "UI Icons 24pt",
+  "sub": "",
+  "label": "Academy",
+  "layer": "Icon / 24dp / Academy",
+  "size": "24x24",
+  "file": "ui-24pt/academy.svg",
+  "mono": true,
+  "colors": [
+   "#ADADAD"
+  ],
+  "bytes": 767
+ },
+ {
+  "group": "UI Icons 16pt",
+  "sub": "",
+  "label": "Feedback Support",
+  "layer": "Icon / 16pt / Feedback&Support",
+  "size": "16x16",
+  "file": "ui-16pt/feedback-support.svg",
+  "mono": true,
+  "colors": [
+   "#999999"
+  ],
+  "bytes": 1102
+ },
+ {
+  "group": "UI Icons 16pt",
+  "sub": "",
+  "label": "Read All",
+  "layer": "Icon / 16pt / ReadAll",
+  "size": "16x16",
+  "file": "ui-16pt/read-all.svg",
+  "mono": true,
+  "colors": [
+   "#999999"
+  ],
+  "bytes": 521
+ },
+ {
+  "group": "UI Icons 24pt",
+  "sub": "",
+  "label": "Occasion",
+  "layer": "Icon / 24dp / Occasion",
+  "size": "24x24",
+  "file": "ui-24pt/occasion.svg",
+  "mono": true,
+  "colors": [
+   "#ADADAD"
+  ],
+  "bytes": 2910
+ },
+ {
+  "group": "UI Icons 24pt",
+  "sub": "",
+  "label": "1x1",
+  "layer": "Icon / 24pt / 1x1",
+  "size": "24x24",
+  "file": "ui-24pt/1x1.svg",
+  "mono": true,
+  "colors": [
+   "#C2C2C2"
+  ],
+  "bytes": 662
+ },
+ {
+  "group": "UI Icons 16pt",
+  "sub": "",
+  "label": "Shared Chat 2",
+  "layer": "Icon / 16pt / SharedChat",
+  "size": "16x16",
+  "file": "ui-16pt/shared-chat-2.svg",
+  "mono": true,
+  "colors": [
+   "#999999"
+  ],
+  "bytes": 566,
+  "note": "Second variant with the same name in Figma"
+ },
+ {
+  "group": "UI Icons 16pt",
+  "sub": "",
+  "label": "Recents",
+  "layer": "Icon / 16pt / Recents",
+  "size": "16x16",
+  "file": "ui-16pt/recents.svg",
+  "mono": true,
+  "colors": [
+   "#999999"
+  ],
+  "bytes": 678
+ },
+ {
+  "group": "UI Icons 16pt",
+  "sub": "",
+  "label": "Subscribe",
+  "layer": "Icon / 16pt / Subscribe",
+  "size": "16x16",
+  "file": "ui-16pt/subscribe.svg",
+  "mono": true,
+  "colors": [
+   "#999999"
+  ],
+  "bytes": 569
+ },
+ {
+  "group": "UI Icons 16pt",
+  "sub": "",
+  "label": "Subscription Alert",
+  "layer": "Icon / 16pt / Subscriprion Alert",
+  "size": "16x16",
+  "file": "ui-16pt/subscription-alert.svg",
+  "mono": false,
+  "colors": [
+   "#999999",
+   "#E81A1A"
+  ],
+  "bytes": 493
+ },
+ {
+  "group": "UI Icons 16pt",
+  "sub": "",
+  "label": "Unsubscribe",
+  "layer": "Icon / 16pt / Unsubscribe",
+  "size": "16x16",
+  "file": "ui-16pt/unsubscribe.svg",
+  "mono": true,
+  "colors": [
+   "#999999"
+  ],
+  "bytes": 745
+ },
+ {
+  "group": "UI Icons 16pt",
+  "sub": "",
+  "label": "Space Indicator Fuchsia",
+  "layer": "Icon / 16pt / Fuchsia",
+  "size": "16x16",
+  "file": "ui-16pt/space-indicator-fuchsia.svg",
+  "mono": false,
+  "colors": [
+   "#FF008A"
+  ],
+  "bytes": 229
+ },
+ {
+  "group": "UI Icons 16pt",
+  "sub": "",
+  "label": "Space Indicator Sun Orange",
+  "layer": "Icon / 16pt / SunOrange",
+  "size": "16x16",
+  "file": "ui-16pt/space-indicator-sun-orange.svg",
+  "mono": false,
+  "colors": [
+   "#F08C29"
+  ],
+  "bytes": 229
+ },
+ {
+  "group": "UI Icons 16pt",
+  "sub": "",
+  "label": "Space Indicator Twilight",
+  "layer": "Icon / 16pt / Twilight",
+  "size": "16x16",
+  "file": "ui-16pt/space-indicator-twilight.svg",
+  "mono": false,
+  "colors": [
+   "#0058A5"
+  ],
+  "bytes": 229
+ },
+ {
+  "group": "UI Icons 16pt",
+  "sub": "",
+  "label": "Space Indicator Floral Purple",
+  "layer": "Icon / 16pt / FloralPurple",
+  "size": "16x16",
+  "file": "ui-16pt/space-indicator-floral-purple.svg",
+  "mono": false,
+  "colors": [
+   "#5A2882"
+  ],
+  "bytes": 229
+ },
+ {
+  "group": "UI Icons 16pt",
+  "sub": "",
+  "label": "Space Indicator Ocean Teal",
+  "layer": "Icon / 16pt / OceanTeal",
+  "size": "16x16",
+  "file": "ui-16pt/space-indicator-ocean-teal.svg",
+  "mono": false,
+  "colors": [
+   "#05A5A5"
+  ],
+  "bytes": 229
+ },
+ {
+  "group": "UI Icons 16pt",
+  "sub": "",
+  "label": "Arrow Up",
+  "layer": "Icon / 16pt / ArrowUp",
+  "size": "16x16",
+  "file": "ui-16pt/arrow-up.svg",
+  "mono": true,
+  "colors": [
+   "#999999"
+  ],
+  "bytes": 310
+ },
+ {
+  "group": "UI Icons 16pt",
+  "sub": "",
+  "label": "Placeholder",
+  "layer": "Icon / 16pt / Dummy",
+  "size": "16x16",
+  "file": "ui-16pt/placeholder.svg",
+  "mono": true,
+  "colors": [
+   "#999999"
+  ],
+  "bytes": 652
+ },
+ {
+  "group": "UI Icons 32pt",
+  "sub": "",
+  "label": "Placeholder",
+  "layer": "Icon / 16pt / Dummy",
+  "size": "32x32",
+  "file": "ui-32pt/placeholder.svg",
+  "mono": true,
+  "colors": [
+   "#999999"
+  ],
+  "bytes": 605
+ },
+ {
+  "group": "UI Icons 16pt",
+  "sub": "",
+  "label": "Bookmark",
+  "layer": "Icon / 16pt / Bookmark",
+  "size": "16x16",
+  "file": "ui-16pt/bookmark.svg",
+  "mono": true,
+  "colors": [
+   "#999999"
+  ],
+  "bytes": 404
+ },
+ {
+  "group": "UI Icons 16pt",
+  "sub": "",
+  "label": "Flag",
+  "layer": "Icon / 16pt / Flag",
+  "size": "16x16",
+  "file": "ui-16pt/flag.svg",
+  "mono": true,
+  "colors": [
+   "#999999"
+  ],
+  "bytes": 447
+ },
+ {
+  "group": "UI Icons 16pt",
+  "sub": "",
+  "label": "Calendar",
+  "layer": "Icon / 16pt / Calendar",
+  "size": "16x16",
+  "file": "ui-16pt/calendar.svg",
+  "mono": true,
+  "colors": [
+   "#999999"
+  ],
+  "bytes": 787
+ },
+ {
+  "group": "UI Icons 16pt",
+  "sub": "",
+  "label": "Download",
+  "layer": "Icon / 16dp / Download",
+  "size": "16x16",
+  "file": "ui-16pt/download.svg",
+  "mono": true,
+  "colors": [
+   "#999999"
+  ],
+  "bytes": 640
+ }
+]

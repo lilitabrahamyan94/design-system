@@ -1,0 +1,33 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+
+<Meta title="Introduction" />
+
+# Design System
+
+Components and tokens built from the Genesis Figma kit. Every colour, font and spacing value comes from the Figma variables, so code and design use the same names.
+
+## What's here
+
+- **Foundations**: Colors, Typography and Icons, generated from the token files.
+- **Components**: Button, Input, Select, Text Area, Toggle, Tabs, Checkbox, Radio, File Upload and Date Picker. Each has live controls and a story for every state from Figma.
+- **Design notes**: each component's Docs tab lists the problems found in Figma, like contrast issues, hard-coded colours or naming typos.
+
+## How to use it in an app
+
+```tsx
+import '@lilit/design-system/styles.css';   // tokens + component styles, once
+import { Button, Input } from '@lilit/design-system';
+
+<Input label="Email" required error="Enter a valid email" />
+<Button variant="primary" leadingIcon>Save</Button>
+```
+
+Use **semantic tokens** (`--semantic-text-on-light-primary`) in components, and **primitives** (`--color-gray-96`) only when no semantic token fits.
+
+## How tokens are built
+
+`src/tokens/*.json` is the source, in the W3C design-tokens format, and keeps the Figma variable names. `npm run tokens` generates `colors.css`, `typography.css` and the TypeScript maps. Don't edit the generated files by hand.
+
+## Accessibility
+
+Every story is checked by the **Accessibility** panel (axe). Components use real form elements, so they work with the keyboard and screen readers.

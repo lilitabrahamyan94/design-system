@@ -1,0 +1,28 @@
+import { Meta, Unstyled } from '@storybook/addon-docs/blocks';
+import { ColorFamily, SemanticColors } from '../foundations/Foundations';
+
+<Meta title="Foundations/Colors" />
+
+# Colors
+
+All the colours are Figma variables, so use them as design tokens. Source: `src/tokens/colors.json`.
+
+**Two layers.** *Primitives* are the raw palette (`--color-sun-orange-040`). *Semantic* tokens point to primitives and say what a colour is for (`--semantic-text-on-light-primary` → `gray-96`). Components should use semantic tokens.
+
+## Semantic tokens
+<Unstyled><SemanticColors /></Unstyled>
+
+## Primitives
+<Unstyled><ColorFamily family="base" title="Black & White" /></Unstyled>
+<Unstyled><ColorFamily family="gray" title="Grays" /></Unstyled>
+<Unstyled><ColorFamily family="gray-80-alpha" title="Gray 80 · alpha tints" /></Unstyled>
+<Unstyled><ColorFamily family="sun-orange" flag="060 missing in Figma variables" /></Unstyled>
+<Unstyled><ColorFamily family="sand-yellow" /></Unstyled>
+<Unstyled><ColorFamily family="leaf-green" /></Unstyled>
+<Unstyled><ColorFamily family="ocean-teal" /></Unstyled>
+<Unstyled><ColorFamily family="sky-blue" /></Unstyled>
+<Unstyled><ColorFamily family="twilight-blue" /></Unstyled>
+<Unstyled><ColorFamily family="floral-purple" /></Unstyled>
+<Unstyled><ColorFamily family="brand-fuchsia" /></Unstyled>
+<Unstyled><ColorFamily family="brand-fuchsia-100-alpha" title="Brand Fuchsia 100 · alpha tints" /></Unstyled>
+<Unstyled><ColorFamily family="red-blaze" title="Red Blaze · Error" /></Unstyled>

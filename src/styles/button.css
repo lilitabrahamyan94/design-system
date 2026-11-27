@@ -1,0 +1,87 @@
+/* Button — from Figma "Button" component set (Type × State × Alignment × Size).
+   Needs colors.css + typography.css. Component tokens below map 1:1 to Figma "Button/…" variables. */
+:root {
+  /* Primary */
+  --button-primary-bg: var(--color-twilight-blue-080);              /* Button/Primary/Default BG #006ECE */
+  --button-primary-label: var(--color-base-white);                  /* Button/Primary/Default Label + Icon */
+  --button-primary-divider: var(--color-gray-80-alpha-16);          /* Button/Primary/Divider */
+  --button-primary-hover-overlay: var(--color-gray-80-alpha-32);    /* Button/Primary/Hover Background */
+  --button-primary-active-overlay: var(--color-gray-80-alpha-48);   /* Button/Primary/Click Response Background */
+  --button-primary-disabled-bg: var(--color-gray-80-alpha-08);      /* Button/Primary/Disabled Backgroung */
+  --button-primary-disabled-label: var(--color-gray-32);            /* Button/Primary/Disabled Label + Icon #ADADAD */
+  --button-primary-focus: #006ece29;                                /* Button/Primary/Focus Indicator (16% — see note) */
+  /* Secondary */
+  --button-secondary-label: var(--color-gray-56);                   /* Button/Secondary/Label + Icon #707070 */
+  --button-secondary-stroke: var(--color-gray-80-alpha-16);         /* Button/Secondary/Default Stroke */
+  --button-secondary-hover-bg: var(--color-gray-80-alpha-08);       /* Button/Secondary/Hover */
+  --button-secondary-active-bg: var(--color-gray-80-alpha-16);      /* Button/Secondary/Click Response */
+  --button-secondary-disabled-bg: var(--color-gray-80-alpha-08);    /* Button/Secondary/Disabled Backgroung */
+  --button-secondary-disabled-label: var(--color-gray-32);          /* Button/Secondary/Disabled Label + Icon */
+  --button-secondary-focus: #006ece52;                              /* Button/Secondary/Focus Indicator */
+  /* Tertiary */
+  --button-tertiary-label: var(--color-twilight-blue-080);          /* Button/Tertirary/Default */
+  --button-tertiary-hover-label: #185284;                           /* hard-coded in Figma, not the Hover variable */
+  --button-tertiary-disabled-label: var(--color-gray-32);           /* Button/Tertirary/Disabled */
+  --button-tertiary-focus: #006ece52;                               /* Button/Tertirary/Focus Indicator */
+  --button-radius: 8px;                                             /* Border Radius */
+}
+
+/* the clickable part(s) */
+.btn, .btn-split > button {
+  appearance: none; margin: 0; border: 0; color: inherit; background: none; cursor: pointer; text-decoration: none;
+}
+.btn-split > button { font: inherit; display: inline-flex; align-items: center; justify-content: center; gap: var(--gap); padding: 0 var(--pad); }
+.btn { justify-content: center; align-items: center; gap: var(--gap); padding: 0 var(--pad); }
+.btn, .btn-split {
+  --h: 32px; --pad: 12px; --icon-pad: 8px; --gap: 8px;
+  display: inline-flex; align-items: center; height: var(--h);
+  border-radius: var(--button-radius); box-sizing: border-box; vertical-align: middle;
+  font-family: var(--font-family-sans); font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-12); line-height: var(--font-line-height-16, 16px); white-space: nowrap;
+}
+.btn--s { --h: 24px; --pad: 8px; --icon-pad: 4px; --gap: 4px; }
+
+.btn:has(> .btn__icon:first-child), .btn-split > .btn__main:has(> .btn__icon:first-child) { padding-left: var(--icon-pad); }
+.btn__icon { display: inline-flex; flex: none; width: 16px; height: 16px; }
+.btn__icon svg { width: 16px; height: 16px; display: block; }
+
+/* split button: main action + menu trigger, divided by a 1px line */
+.btn-split { padding: 0; align-items: stretch; }
+.btn-split > .btn__main { border-radius: var(--button-radius) 0 0 var(--button-radius); }
+.btn-split > .btn__menu { width: var(--h); padding: 0; border-radius: 0 var(--button-radius) var(--button-radius) 0; border-left: 1px solid var(--divider); }
+
+/* Centered alignment: width follows the container, content centred */
+.btn--block { display: flex; width: 100%; }
+
+/* ---------- Primary ---------- */
+.btn--primary { --divider: var(--button-primary-divider); background: var(--button-primary-bg); color: var(--button-primary-label); }
+.btn--primary:is(.btn, .btn-split > button):hover, .btn--primary.is-hover,
+.btn-split.btn--primary > button:hover { background-image: linear-gradient(var(--button-primary-hover-overlay), var(--button-primary-hover-overlay)); }
+.btn--primary.btn:active, .btn--primary.is-active, .btn-split.btn--primary > button:active { background-image: linear-gradient(var(--button-primary-active-overlay), var(--button-primary-active-overlay)); }
+
+/* ---------- Secondary ---------- */
+.btn--secondary { --divider: var(--button-secondary-stroke); color: var(--button-secondary-label); box-shadow: inset 0 0 0 1px var(--button-secondary-stroke); }
+.btn--secondary.btn:hover, .btn--secondary.is-hover, .btn-split.btn--secondary > button:hover { background-color: var(--button-secondary-hover-bg); }
+.btn--secondary.btn:active, .btn--secondary.is-active, .btn-split.btn--secondary > button:active { background-color: var(--button-secondary-active-bg); }
+
+/* ---------- Tertiary (text button) ---------- */
+.btn--tertiary { --pad: 8px; --icon-pad: 8px; --gap: 4px; color: var(--button-tertiary-label); }
+.btn--tertiary.btn--s { --pad: 4px; --icon-pad: 4px; }
+.btn--tertiary.btn:hover, .btn--tertiary.is-hover, .btn--tertiary.btn:active, .btn--tertiary.is-active { color: var(--button-tertiary-hover-label); }
+
+/* ---------- Disabled ---------- */
+.btn:disabled, .btn.is-disabled, .btn-split.is-disabled, .btn-split:has(> button:disabled) { cursor: not-allowed; background-image: none; box-shadow: none; }
+.btn-split.is-disabled > button, .btn-split > button:disabled { cursor: not-allowed; background-image: none; background-color: transparent; }
+.btn--primary:is(:disabled, .is-disabled), .btn-split.btn--primary:has(> button:disabled) { background: var(--button-primary-disabled-bg); color: var(--button-primary-disabled-label); }
+.btn--secondary:is(:disabled, .is-disabled), .btn-split.btn--secondary:has(> button:disabled) { background: var(--button-secondary-disabled-bg); color: var(--button-secondary-disabled-label); }
+.btn--tertiary:is(:disabled, .is-disabled) { color: var(--button-tertiary-disabled-label); }
+
+/* ---------- Focus (keyboard) ---------- */
+.btn:focus-visible, .btn.is-focus, .btn-split:has(> button:focus-visible), .btn-split.is-focus { outline: 2px solid var(--ring); outline-offset: 0; }
+.btn-split > button:focus-visible { outline: none; }
+.btn--primary { --ring: var(--button-primary-focus); }
+.btn--secondary { --ring: var(--button-secondary-focus); }
+.btn--tertiary { --ring: var(--button-tertiary-focus); }
+
+/* ---------- Button group ---------- */
+.btn-group { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }

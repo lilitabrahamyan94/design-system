@@ -1,0 +1,23 @@
+import { Meta, Unstyled } from '@storybook/addon-docs/blocks';
+import { IconGallery } from '../foundations/Foundations';
+
+<Meta title="Foundations/Icons" />
+
+# Icons
+
+147 icons from the Figma kit. App icons and brand logos are left out. Single-colour icons use `currentColor`, so they take the text colour of their parent.
+
+```tsx
+import { Icon } from '@lilit/design-system';
+<Icon name="ui-16pt/trash" />                 {/* decorative */}
+<Icon name="ui-16pt/trash" label="Delete" />  {/* meaningful: gets an accessible name */}
+```
+
+<Unstyled><IconGallery /></Unstyled>
+
+## Notes from Figma
+- 4 Section icons are **SF Symbols typed as text**. Apple's license only allows them in Apple-platform apps, so they are not exported.
+- Wrong labels: three cells say "Copy to clipboard" but hold a database icon, an arrow and a corner fragment.
+- Duplicates: Like, Dislike, Category, Shared Chat, Close and Placeholder appear twice.
+- Success, Sort and More Vertical have empty cells.
+- The Loader used an angular gradient, which SVG can't express. It was rebuilt.

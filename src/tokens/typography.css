@@ -1,0 +1,137 @@
+/* AUTO-GENERATED from typography.json — do not edit by hand */
+:root {
+  --font-family-sans: Inter, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-size-11: 11px;
+  --font-size-12: 12px;
+  --font-size-14: 14px;
+  --font-size-16: 16px;
+  --font-size-24: 24px;
+  --font-size-32: 32px;
+  --font-line-height-16: 16px;
+  --font-line-height-20: 20px;
+  --font-line-height-32: 32px;
+  --font-line-height-40: 40px;
+  --font-letter-spacing-tight: -0.04em; /* Figma -4% */
+  --font-letter-spacing-snug: -0.02em; /* Figma -2% */
+  --font-letter-spacing-normal: 0em;
+}
+
+/* Display/Large */
+.text-display-large {
+  font-family: var(--font-family-sans);
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-32);
+  line-height: var(--font-line-height-40);
+  letter-spacing: var(--font-letter-spacing-tight);
+}
+
+/* Display/Medium */
+.text-display-medium {
+  font-family: var(--font-family-sans);
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-24);
+  line-height: var(--font-line-height-32);
+  letter-spacing: var(--font-letter-spacing-snug);
+}
+
+/* Heading/H1 — Doc frame says line-height 16, variable says 20 — using 20 */
+.text-heading-h1 {
+  font-family: var(--font-family-sans);
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-16);
+  line-height: var(--font-line-height-20);
+  letter-spacing: var(--font-letter-spacing-normal);
+}
+
+/* Heading/H2 */
+.text-heading-h2 {
+  font-family: var(--font-family-sans);
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-14);
+  line-height: var(--font-line-height-16);
+  letter-spacing: var(--font-letter-spacing-normal);
+}
+
+/* Heading/H3 */
+.text-heading-h3 {
+  font-family: var(--font-family-sans);
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-12);
+  line-height: var(--font-line-height-16);
+  letter-spacing: var(--font-letter-spacing-normal);
+}
+
+/* Body/Default */
+.text-body-default {
+  font-family: var(--font-family-sans);
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-14);
+  line-height: var(--font-line-height-20);
+  letter-spacing: var(--font-letter-spacing-normal);
+}
+
+/* Body/Highlighted */
+.text-body-highlighted {
+  font-family: var(--font-family-sans);
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-14);
+  line-height: var(--font-line-height-20);
+  letter-spacing: var(--font-letter-spacing-normal);
+}
+
+/* Caption/Default — Doc frame says Medium, variable says Regular — using Regular */
+.text-caption-default {
+  font-family: var(--font-family-sans);
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-12);
+  line-height: var(--font-line-height-16);
+  letter-spacing: var(--font-letter-spacing-normal);
+}
+
+/* Caption/Highlighted */
+.text-caption-highlighted {
+  font-family: var(--font-family-sans);
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-12);
+  line-height: var(--font-line-height-16);
+  letter-spacing: var(--font-letter-spacing-normal);
+}
+
+/* Button/Label Highlighted */
+.text-button-label {
+  font-family: var(--font-family-sans);
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-12);
+  line-height: var(--font-line-height-16);
+  letter-spacing: var(--font-letter-spacing-normal);
+}
+
+/* Field/Placeholder */
+.text-field-placeholder {
+  font-family: var(--font-family-sans);
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-12);
+  line-height: var(--font-line-height-16);
+  letter-spacing: var(--font-letter-spacing-normal);
+}
+
+/* Field/Label */
+.text-field-label {
+  font-family: var(--font-family-sans);
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-11);
+  line-height: var(--font-line-height-16);
+  letter-spacing: var(--font-letter-spacing-normal);
+}
+
+/* Field/Assistive Message */
+.text-field-assistive {
+  font-family: var(--font-family-sans);
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-11);
+  line-height: var(--font-line-height-16);
+  letter-spacing: var(--font-letter-spacing-normal);
+}
