@@ -21,9 +21,17 @@ const stateFirst: ArgTypesEnhancer = ({ argTypes, initialArgs }) => {
 // run after Storybook has added the argTypes it infers from args
 stateFirst.secondPass = true;
 
+// Keep copied snippets clean: drop internal keys and props that equal their default.
+const cleanSnippet = (code: string) =>
+  code
+    .replace(/\s+key=(?:"[^"]*"|\{[^}]*\})/g, '')
+    .replace(/\s+\w+=\{(?:false|undefined)\}/g, '')
+    .replace(/\s+\w+=""/g, '');
+
 const preview: Preview = {
   argTypesEnhancers: [stateFirst],
   parameters: {
+    docs: { source: { transform: cleanSnippet } },
     layout: 'padded',
     controls: { expanded: true, matchers: { color: /(background|color)$/i } },
     a11y: { test: 'todo' },
