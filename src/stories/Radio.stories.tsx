@@ -12,7 +12,6 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Playground: Story = {};
-export const Vertical: Story = { args: { inline: false } };
 export const AllStates: Story = {
   name: 'All states', parameters: { controls: { disable: true } },
   render: () => <StateTable cols={['Default', 'Hover', 'Disabled']} rows={[false, true].map(on => ({ label: on ? 'Checked' : 'Unchecked', cells: ['', 'is-hover', 'disabled'].map(st => <Radio name={`s-${on}-${st}`} label="Label" defaultChecked={on} disabled={st === 'disabled'} className={st === 'is-hover' ? st : undefined} />) }))} />,

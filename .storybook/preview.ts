@@ -4,7 +4,7 @@ import '../src/styles/index.css';
 const preview: Preview = {
   parameters: {
     layout: 'padded',
-    controls: { expanded: true, matchers: { color: /(background|color)$/i } },
+    controls: { expanded: true, sort: 'requiredFirst', matchers: { color: /(background|color)$/i } },
     a11y: { test: 'todo' },
     options: {
       storySort: { order: ['Introduction', 'Foundations', ['Colors', 'Typography', 'Icons'], 'Components', ['Button', 'Button Group', 'Input', 'Text Area', 'Select', 'Toggle', 'Tabs', 'Checkbox', 'Radio', 'File Upload', 'Date Picker']] },

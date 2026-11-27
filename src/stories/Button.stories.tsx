@@ -1,15 +1,18 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
-import { Button, ButtonGroup } from '../components/Button';
-import { StateTable, notes } from './helpers';
+import { Button } from '../components/Button';
+import { StateTable, notes, stateControl } from './helpers';
 
 const meta = {
   title: 'Components/Button',
   component: Button,
-  args: { children: 'Button Label', variant: 'primary', size: 'm', leadingIcon: true, menu: false, block: false, disabled: false },
+  args: { children: 'Button Label', variant: 'primary', size: 'm', leadingIcon: true, menu: false, block: false, disabled: false, className: 'default' },
   argTypes: {
+    className: stateControl(['hover', 'click', 'focus']),
     variant: { control: 'inline-radio', options: ['primary', 'secondary', 'tertiary'] },
     size: { control: 'inline-radio', options: ['m', 's'] },
     leadingIcon: { control: 'boolean' },
+    menu: { name: 'menu (nested option)' },
+    block: { name: 'block (centered)' },
   },
   parameters: {
     docs: { description: { component: notes('Buttons trigger an operation. Choose the type by how important the action is: **Primary** once per view, **Secondary** for other actions, **Tertiary** for low-emphasis actions.\n\n**Label dependent** buttons fit their label and can have a nested option (`menu`). **Centered** buttons (`block`) fill their container.', [
@@ -19,18 +22,12 @@ const meta = {
       'Variable name typos: "Tertirary", "Backgroung".',
     ]) } },
   },
+  decorators: [(S, c) => c.args.block ? <div style={{ width: 280 }}><S /></div> : <S />],
 } satisfies Meta<typeof Button>;
 export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Playground: Story = {};
-export const Primary: Story = { args: { variant: 'primary' } };
-export const Secondary: Story = { args: { variant: 'secondary' } };
-export const Tertiary: Story = { args: { variant: 'tertiary' } };
-export const SplitButton: Story = { name: 'With nested option', args: { menu: true, menuLabel: 'More export options', children: 'Export' } };
-export const Centered: Story = { args: { block: true, children: 'Continue', leadingIcon: false }, decorators: [S => <div style={{ width: 280 }}><S /></div>] };
-export const Small: Story = { args: { size: 's' } };
-export const Disabled: Story = { args: { disabled: true } };
 
 const STATES = [['', 'Default'], ['is-hover', 'Hover'], ['is-active', 'Click Response'], ['disabled', 'Disabled'], ['is-focus', 'Focused']] as const;
 const matrix = (extra: { menu?: boolean; block?: boolean }) => (['m', 's'] as const).map(size => (
@@ -42,5 +39,8 @@ const matrix = (extra: { menu?: boolean; block?: boolean }) => (['m', 's'] as co
     }))} />
   </div>
 ));
-export const AllStatesLabelDependent: Story = { name: 'All states · Label dependent', render: () => <>{matrix({ menu: true })}</>, parameters: { controls: { disable: true } } };
-export const AllStatesCentered: Story = { name: 'All states · Centered', render: () => <>{matrix({ block: true })}</>, parameters: { controls: { disable: true } } };
+export const AllStates: Story = {
+  name: 'All states',
+  render: () => <><h3 style={{ font: '500 14px var(--font-family-sans)' }}>Label dependent</h3>{matrix({ menu: true })}<h3 style={{ font: '500 14px var(--font-family-sans)' }}>Centered</h3>{matrix({ block: true })}</>,
+  parameters: { controls: { disable: true } },
+};

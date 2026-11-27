@@ -16,3 +16,15 @@ export function StateTable({ cols, rows }: { cols: string[]; rows: Array<{ label
   );
 }
 export const notes = (title: string, items: string[]) => `${title}\n\n**Notes from Figma**\n\n${items.map(i => `- ${i}`).join('\n')}`;
+
+/**
+ * "State" dropdown for the Playground. It drives the component's className,
+ * so you can preview Hover / Click / Focus without using the mouse.
+ */
+export const stateControl = (states: Array<'hover' | 'click' | 'focus'>) => ({
+  name: 'state',
+  description: 'Preview an interaction state. In a real app these happen on hover, press and keyboard focus.',
+  control: 'select' as const,
+  options: ['default', ...states],
+  mapping: { default: undefined, hover: 'is-hover', click: 'is-active', focus: 'is-focus' },
+});
